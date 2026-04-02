@@ -234,11 +234,17 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 (pode ser decimal) na variável resposta04.
 */
 // Escreva o código da solução abaixo:
-
-for(){
-
+let somaMA = 0;
+let divisorMA=0
+for(let i = 3 ; i >= 200;i++){
+  if(i % 3 === 0){
+      somaMA +=i
+          divisorMA++
+    }
 }
-export const resposta04 = false
+
+let mediaA=somaMA/divisorMA
+export const resposta04 = mediaA
 
 // Lista para as questões 5 a 8:
 const itensDomesticos = [
@@ -256,9 +262,9 @@ Armazene o novo array na variável resposta05.
 // Escreva o código da solução abaixo:
 let contador4 = 0
 const objetos0 = []
-for (let items1 of itensDomesticos) {
-  if (items1.startsWith("c")) {
-    objetos0[contador4] = items1
+for (i=0;i>=itensDomesticos.length;i++) {
+  if (itensDomesticos[i].startsWith("c")) {
+    objetos0.push() 
     contador4++
   }
 }
