@@ -1,5 +1,7 @@
-Data de atualização: Dia 02/04/2026 às 18:20:50
+Data de atualização: Dia 02/04/2026 às 18:42:29
  
 
 | Questão | Exercício | Entregue | Correto | Mensagem de Erro |
 |---------|-----------|----------|---------|------------------|
+| ❌❌❌ | Ex 1 | ❌❌❌ | ❌❌❌ | a is not defined |
+| ❌❌❌ | Ex 2 | ❌❌❌ | ❌❌❌ | i is not defined |
