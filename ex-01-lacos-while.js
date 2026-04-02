@@ -189,11 +189,11 @@ de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta0
 */
 // Escreva o código da solução abaixo:
 let a2 = 0;
-let c = 1;
+let c = 0;
 while(c <= 50) {
     a2 += c;
     c += 2;
-    console.log(a);
+    console.log(a2);
 }
 
 export const resposta02 = a2;
@@ -209,7 +209,10 @@ let contador = 0;
 let indic = 0;
 
 while (indic < numeros.length) {
-  contador += numeros[indic++] < 0;
+  if(numeros[indic] < 0){
+    contador += 1;
+  }
+  indic++;
 }
 console.log(contador);
 export const resposta03 = contador;
@@ -223,9 +226,12 @@ let adicionador = 0;
 let numero = 7;
 
 while (numero <= 100) {
-  adicionador += numero;
-  numero += 7;
-}console.log(adicionador);
+  if(numero % 7 === 0){
+    adicionador += numero;
+  }
+  numero = numero +1;
+}
+console.log(adicionador);
 export const resposta04 = adicionador;
 
 // Lista para as questões 5 a 10:
@@ -247,7 +253,7 @@ let indice2 = nomes.length - 1;
 
 while(indice2 >= 0){
     novaLista.push(nomes[indice2]);
-    indice2--; 
+      indice2--; 
 } console.log(novaLista)
 export const resposta05 = novaLista
 
@@ -262,7 +268,7 @@ let e = nomes.length;
 const segundaLista = [];
 while(indice3 < e){
     if(indice3 % 2 === 0){
-        segundaLista.push(indice3);
+        segundaLista.push(nomes[indice3]);
     }
     indice3++;
 } console.log(segundaLista)
@@ -277,7 +283,7 @@ let ind = 0;
 const terceiraLista = [];
 let elemeto = nomes.length - 1;
 
-while(ind <= elemento){
+while(ind <= elemeto){
     if(nomes[ind].length <= 5){
         terceiraLista.push(nomes[ind]);
     }
@@ -297,8 +303,8 @@ let indice4 = 0;
 let elementos = nomes.length - 1;
 
 while(indice4 <= elementos){
-    quartaLista.push(nomes[quartaLista].toUpperCase());
-    indice4++;
+    quartaLista.push(nomes[indice4].toUpperCase());
+      indice4++;
 }
 console.log(quartaLista);
 
@@ -310,8 +316,19 @@ que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver)
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
+const quintaLista=[]
+let indice5 = 0;
+let elem=nomes.length-1
 
-export const resposta09 = false
+while(indice5<=elem){
+  if(nomes[indice5][0]=="A"||nomes[indice5][0]=="E"||nomes[indice5][0]=="I"||nomes[indice5][0]=="O"||nomes[indice5][0]=="U"){
+    quintaLista.push(nomes[indice5])
+  }
+  indice5+=1
+}
+
+
+export const resposta09 = quintaLista
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -319,5 +336,15 @@ Se houver empate (mais de um nome com o mesmo comprimento máximo), armazene
 apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável resposta10.
 */
 // Escreva o código da solução abaixo:
+/*const maisLongo
+let indice6 = 0;
+let elem2=nomes.length-1
 
-export const resposta10 = false
+while(indice6 < elem2){
+  if(nomes[indice6]>maisLongo){
+    maisLongo=nomes[indice6]
+  }
+  indice6+=1
+}
+
+export const resposta10 = maisLongo*/
