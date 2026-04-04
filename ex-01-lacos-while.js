@@ -245,15 +245,25 @@ na variável resposta05.
 */
 
 // Escreva o código da solução abaixo:
-const novaLista = [];
-let indice2 = nomes.length - 1;
+//const listaReverso = [];
 
-while(indice2 >= 0){
-    novaLista.push(nomes[indice2]);
-    indice2--; 
-} console.log(novaLista)
-export const resposta05 = novaLista
+//let i = nomes.length - 1;
 
+//while (i >= 0) {
+  //listaReverso.push(nomes[i]);
+ // i--;
+}
+
+const listaReverse = [];
+
+let i = nomes.length - 1;
+while (i >= 0) {
+  //.push adciona no final 
+  listaReverse.push(nomes[i]);
+  i--
+}
+
+export const resposta05 = listaReverse;
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
 apenas os nomes que estão nos índices pares da lista original (índices 0, 2, 4, 6, 8).
