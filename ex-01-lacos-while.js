@@ -174,13 +174,12 @@ Crie um laço de repetição while que armazene em uma variável a soma dos núm
 de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
-let a1 = 0;
+let number = 1;
 let soma = 0;
-while(a1 <= 32){
-   soma = soma + a1;
-   a1++;
-   console.log(soma);
-}
+while(number <= 32){
+   soma = soma + number;
+   number++;
+   }
 export const resposta01 = soma;
 
 /* Questão 02
@@ -188,15 +187,15 @@ Utilizando um laço de repetição while, calcule a soma de todos os números í
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-let a2 = 0;
-let c = 1;
-while(c <= 50) {
-    a2 += c;
-    c += 2;
-    console.log(a);
+let soma1 = 0;
+let impar = 1;
+while(impar <= 50) {
+    soma1 += impar;
+    impar += 2;
+
 }
 
-export const resposta02 = a2;
+export const resposta02 = soma1;
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -204,14 +203,16 @@ array abaixo. Armazene a quantidade encontrada na variável resposta03.
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
-const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2];
-let contador = 0;
-let indic = 0;
 
-while (indic < numeros.length) {
-  contador += numeros[indic++] < 0;
+const numeroQ = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2];
+let contador = 0;
+let i = 0
+while (i < numeroQ.length){
+  if (numeroQ[i] < 0) {
+    contador++;
+  }
+  i++
 }
-console.log(contador);
 export const resposta03 = contador;
 
 /* Questão 04
@@ -219,15 +220,17 @@ Utilizando um laço de repetição while, faça a soma de todos os múltiplos de
 entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
-let adicionador = 0;
-let numero = 7;
+let mult7 = 0;
+let adicao = 7;
 
-while (numero <= 100) {
-  adicionador += numero;
-  numero += 7;
-}console.log(adicionador);
-export const resposta04 = adicionador;
+while (adicao <= 100) {
+   mult7 += adicao;
+    // soma o valor atual (7, 14, 21) no acumulador
+  adicao += 7;
+    // vai pro próximo múltiplo de 7
+}
 
+export const resposta04 = mult7;
 // Lista para as questões 5 a 10:
 const nomes = ["Ana", "Bruno", "Carla", "Daniel", "Eduarda", "Fábio", "Gabriela", "Hugo", "Isabela", "João"];
 /* DICA
