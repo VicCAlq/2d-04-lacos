@@ -175,7 +175,15 @@ de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta01 = false
+let soma1 = 0
+let i1 = 1
+
+while (i1 <= 32) {
+  soma1 += i1
+  i1++
+}
+
+export const resposta01 = soma1
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
@@ -183,7 +191,17 @@ de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta0
 */
 // Escreva o código da solução abaixo:
 
-export const resposta02 = false
+let soma2 = 0
+let i2 = 1
+
+while (i2 <= 50) {
+  if (i2 % 2 !== 0) {
+    soma2 += i2
+  }
+  i2++
+}
+
+export const resposta02 = soma2
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -193,7 +211,18 @@ const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
 
-export const resposta03 = false
+const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
+let indice3 = 0
+let negativos = 0
+
+while (indice3 < numeros.length) {
+  if (numeros[indice3] < 0) {
+    negativos++
+  }
+  indice3++
+}
+
+export const resposta03 = negativos
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
@@ -201,7 +230,17 @@ entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta04 = false
+let soma4 = 0
+let i4 = 1
+
+while (i4 <= 100) {
+  if (i4 % 7 === 0) {
+    soma4 += i4
+  }
+  i4++
+}
+
+export const resposta04 = soma4
 
 // Lista para as questões 5 a 10:
 const nomes = [
@@ -221,7 +260,15 @@ na variável resposta05.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta05 = false
+let resposta05 = []
+let i5 = nomes.length - 1
+
+while (i5 >= 0) {
+  resposta05.push(nomes[i5])
+  i5--
+}
+
+export { resposta05 }
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -230,7 +277,17 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta06 = false
+let resposta06 = []
+let i6 = 0
+
+while (i6 < nomes.length) {
+  if (i6 % 2 === 0) {
+    resposta06.push(nomes[i6])
+  }
+  i6++
+}
+
+export { resposta06 }
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
@@ -238,7 +295,17 @@ que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta07 = false
+let resposta07 = []
+let i7 = 0
+
+while (i7 < nomes.length) {
+  if (nomes[i7].length <= 5) {
+    resposta07.push(nomes[i7])
+  }
+  i7++
+}
+
+export { resposta07 }
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
@@ -246,7 +313,15 @@ escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta08 = false
+let resposta08 = []
+let i8 = 0
+
+while (i8 < nomes.length) {
+  resposta08.push(nomes[i8].toUpperCase())
+  i8++
+}
+
+export { resposta08 }
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -255,7 +330,26 @@ Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta09 = false
+let resposta09 = []
+let i9 = 0
+
+while (i9 < nomes.length) {
+  let primeiraLetra = nomes[i9][0].toLowerCase()
+
+  if (
+    primeiraLetra === 'a' ||
+    primeiraLetra === 'e' ||
+    primeiraLetra === 'i' ||
+    primeiraLetra === 'o' ||
+    primeiraLetra === 'u'
+  ) {
+    resposta09.push(nomes[i9])
+  }
+
+  i9++
+}
+
+export { resposta09 }
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -264,4 +358,14 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 */
 // Escreva o código da solução abaixo:
 
-export const resposta10 = false
+let resposta10 = ""
+let i10 = 0
+
+while (i10 < nomes.length) {
+  if (nomes[i10].length > resposta10.length) {
+    resposta10 = nomes[i10]
+  }
+  i10++
+}
+
+export { resposta10 }
