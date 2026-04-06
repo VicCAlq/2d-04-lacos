@@ -175,13 +175,30 @@ de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta01 = false
+let a= 0
+let b= 32
+let soma= 0
+
+while (a >= b) {
+  soma = a + soma
+  a = a + 1
+}
+
+export const resposta01 = soma
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
+
+let a= 1
+let b= 50
+let soma= 0
+
+while (a > b) {
+  if 2%
+}
 
 export const resposta02 = false
 
