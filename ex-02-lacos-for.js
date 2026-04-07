@@ -206,7 +206,7 @@ for(let i=1;i<=50;i++){
     num++
   }
 }
-export const resposta02 = Num
+export const resposta02 = num
 
 /* Questão 03
 Utilizando um laço de repetição for, calcule a soma de todos os números pares
@@ -228,8 +228,18 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 (pode ser decimal) na variável resposta04.
 */
 // Escreva o código da solução abaixo:
+let numerosMultiplosDe3 = 0;
+let quantidadeDeAlgarismos = 0;
 
-export const resposta04 = false
+for(let i = 1; i <= 200; i++) {
+    if(i % 3 === 0) {
+        numerosMultiplosDe3+=i
+        quantidadeDeAlgarismos++
+    }
+}
+let soma = numerosMultiplosDe3/quantidadeDeAlgarismos
+
+export const resposta04 = soma
 
 // Lista para as questões 5 a 8:
 const itensDomesticos = [
@@ -245,8 +255,14 @@ Armazene o novo array na variável resposta05.
 
 */
 // Escreva o código da solução abaixo:
-
-export const resposta05 = false
+const itensDomesticosComC=[]
+  for(let i=0;i<itensDomesticos.length;i++){
+    if(itensDomesticos[i].startsWith("c")){
+      itensDomesticosComC.push(itensDomesticos[i])
+    }
+  }
+    
+export const resposta05 = itensDomesticosComC
 
 /* Questão 06
 Utilizando a mesma lista de itens domésticos da questão anterior, use um laço de
@@ -255,8 +271,13 @@ estão nos índices ímpares da lista original (índices 1, 3, 5, 7, 9, 11, 13).
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta06 = false
+let itensDomesticosImpares=[]
+for(let i=0;i<itensDomesticos.length;i++){
+  if(i%2 != 0){
+    itensDomesticosImpares.push(itensDomesticos[i])
+  }
+}
+export const resposta06 = itensDomesticosImpares
 
 /* Questão 07
 Seguindo com a lista de itens domésticos, use um laço de repetição for (com contador)
@@ -264,8 +285,13 @@ para criar um novo array contendo os itens com mais de 6 letras. Armazene o novo
 na variável resposta07.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta07 = false
+let itensDomesticosComMaisDe6Letras=[]
+for(let i=0;i<itensDomesticos.length;i++){
+  if(itensDomesticos[i].length>6){
+    itensDomesticosComMaisDe6Letras.push(itensDomesticos[i])
+  }
+}
+export const resposta07 = itensDomesticosComMaisDe6Letras
 
 /* Questão 08
 Finalizando com a lista de itens domésticos abaixo, use um laço de repetição for 
