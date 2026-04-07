@@ -336,15 +336,16 @@ Se houver empate (mais de um nome com o mesmo comprimento máximo), armazene
 apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável resposta10.
 */
 // Escreva o código da solução abaixo:
-const maisLongo
-let indice6 = 0;
-let elem2=nomes.length-1
+ 
+  let maisLongo="";
+    let indice6 = 0;
+    let elem2=nomes.length-1
 
-while(indice6 < elem2){
-  if(nomes[indice6]>maisLongo){
-    maisLongo=nomes[indice6]
-  }
-  indice6+=1
-}
+    while(indice6 < elem2){
+    if(nomes[indice6].length > maisLongo.length){
+        maisLongo=nomes[indice6]
+    }
+    indice6+=1
+    }
 
 export const resposta10 = maisLongo
