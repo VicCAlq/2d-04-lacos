@@ -234,7 +234,7 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 let soma1 = 0;
 let multdetres = 0;
 
-for (i = 3; i <= 200; i +=3) {
+for (let i = 3; i <= 200; i +=3) {
   soma1 += i
   multdetres++
 }
@@ -254,15 +254,15 @@ Armazene o novo array na variável resposta05.
 
 */
 // Escreva o código da solução abaixo:
-let contador4 = 0
-const objetos0 = []
-for (let items1 of itensDomesticos) {
-  if (items1.startsWith("c")) {
-    objetos0[contador4] = items1
-    contador4++
+const objetos0 = [];
+
+for (let i = 0; i < itensDomesticos.length; i++) {
+  if (itensDomesticos[i].startsWith("c")) {
+    objetos0.push(itensDomesticos[i]);
   }
 }
-export const resposta05 = objetos0
+const item = itensDomesticos;
+export const resposta05 = objetos0;
 
 /* Questão 06
 Utilizando a mesma lista de itens domésticos da questão anterior, use um laço de
@@ -271,16 +271,21 @@ estão nos índices ímpares da lista original (índices 1, 3, 5, 7, 9, 11, 13).
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
-let contador5 = 0
-const objetos1 = []
-for (let items2 of itensDomesticos) {
-  if (contador5 % 2 !== 0) {
-    objetos1.push(items2)
-  }
-  contador5++
-}
-export const resposta06 = objetos1
 
+const objetos1 = [];
+
+// percorre toda a lista usando índice (for com contador)
+for (let i = 0; i < itensDomesticos.length; i++) {
+ // (índice ímpar = resto da divisão por 2 diferente de 0)
+  if (i % 2 !== 0) {
+// adiciona o item correspondente ao índice no novo array
+//  // usando length para inserir no final (sem usar .push)
+    objetos1[objetos1.length] = itensDomesticos[i];
+  }
+}
+
+// retorna o novo array com os itens dos índices ímpares
+export const resposta06 = objetos1;
 /* Questão 07
 Seguindo com a lista de itens domésticos, use um laço de repetição for (com contador)
 para criar um novo array contendo os itens com mais de 6 letras. Armazene o novo array
