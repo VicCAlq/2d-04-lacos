@@ -1,9 +1,9 @@
-Data de atualização: Dia 07/04/2026 às 15:52:46
+Data de atualização: Dia 08/04/2026 às 14:36:40
  
 
 | Aluno | Qtd. questões acertadas (de 15) | Nota total |
 |-------|---------------------------------|------------|
-| Adriano Filipe (adriano-filipe-nave) | 8 | 53.33 |
+| Adriano Filipe (adriano-filipe-nave) | 19 | 100.00 |
 | André Ricardo (andre-ricardo-nave) | 1 | 6.67 |
 | Arthur Amorim (ArthurAmorim67) | 0 | 0.00 |
 | Arthur Amorim (arthur-amorim-nave) | 0 | 0.00 |
@@ -42,7 +42,7 @@ Data de atualização: Dia 07/04/2026 às 15:52:46
 | Matheus Guilherme (Matheus-Guilherme-nave) | 0 | 0.00 |
 | Michel Nascimento Nave (michelnascimento-nave) | 0 | 0.00 |
 | Miguel Angelo (miguel-angelo-nave) | 0 | 0.00 |
-| Pedro Carvalho (Pedro-Carvalho-Nave) | 0 | 0.00 |
+| Pedro Carvalho (Pedro-Carvalho-Nave) | 9 | 61.33 |
 | Rianna Lavinia (Rianna-Lavinia-Nave) | 0 | 0.00 |
 | Samuel Assuncao (samuel-assuncao-nave) | 0 | 0.00 |
 | Samuel Lindoso (samuel-lindoso-nave) | 0 | 0.00 |
