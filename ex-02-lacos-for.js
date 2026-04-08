@@ -234,7 +234,7 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 let soma1 = 0;
 let multdetres = 0;
 
-for (let i = 3; i <= 200; i +=3) {
+for (i = 3; i <= 200; i +=3) {
   soma1 += i
   multdetres++
 }
@@ -254,15 +254,15 @@ Armazene o novo array na variável resposta05.
 
 */
 // Escreva o código da solução abaixo:
-const objetos0 = [];
-
-for (let i = 0; i < itensDomesticos.length; i++) {
-  if (itensDomesticos[i].startsWith("c")) {
-    objetos0.push(itensDomesticos[i]);
+let contador4 = 0
+const objetos0 = []
+for (let items1 of itensDomesticos) {
+  if (items1[0] === "c"){
+    objetos0[contador4] = items1
+    contador4++
   }
 }
-const item = itensDomesticos;
-export const resposta05 = objetos0;
+export const resposta05 = objetos0
 
 /* Questão 06
 Utilizando a mesma lista de itens domésticos da questão anterior, use um laço de
@@ -272,32 +272,34 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 
-const objetos1 = [];
+const objetos1 = []
 
-// percorre toda a lista usando índice (for com contador)
-for (let i = 0; i < itensDomesticos.length; i++) {
- // (índice ímpar = resto da divisão por 2 diferente de 0)
-  if (i % 2 !== 0) {
-// adiciona o item correspondente ao índice no novo array
-//  // usando length para inserir no final (sem usar .push)
-    objetos1[objetos1.length] = itensDomesticos[i];
-  }
+// Pega diretamente os itens que estão nos índices ímpares (1, 3, 5…)
+// Começa do 1 e pulamos de 2 em 2 para pegar apenas índices ímpares
+for (let i = 1; i < itensDomesticos.length; i += 2) {
+  objetos1[objetos1.length] = itensDomesticos[i]
 }
 
-// retorna o novo array com os itens dos índices ímpares
-export const resposta06 = objetos1;
+export const resposta06 = objetos1
+
 /* Questão 07
 Seguindo com a lista de itens domésticos, use um laço de repetição for (com contador)
 para criar um novo array contendo os itens com mais de 6 letras. Armazene o novo array
 na variável resposta07.
 */
 // Escreva o código da solução abaixo:
-const objetos2 = []
-for (let contador6 = 0; contador6 < itensDomesticos.length; contador6++) {
-  if (itensDomesticos[contador6].length > 6) {
-    objetos2.push(itensDomesticos[contador6])
+
+let contador = 0;              // indice pro novo array
+const sixLetras = [];           // array q vai guardar os itens com mais de 6 letras
+
+for (let i = 0; i < itensDomesticos.length; i++) {
+  if (itensDomesticos[i].length > 6) {             // verifica se a palavra tem mais de 6 letras
+    sixLetras[contador] = itensDomesticos[i];      // adiciona a palavra no novo array
+    contador++;                                     
   }
-}export const resposta07 = objetos2
+}
+
+export const resposta07 = sixLetras
 
 /* Questão 08
 Finalizando com a lista de itens domésticos abaixo, use um laço de repetição for 
@@ -305,14 +307,18 @@ Finalizando com a lista de itens domésticos abaixo, use um laço de repetição
 o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
-let contador7 = itensDomesticos.length - 1
-const objetos3= []
-for (let i = contador7; i >= 0; i--) {
-  objetos3.push(itensDomesticos[i])
-}
-export const resposta08 = objetos3
 
-// Lista para as questões 5 a 10:
+let contador7 = 0;                     
+const itemrevertido = []; // array que vai receber os itens em ordem reversa
+
+for (let i = itensDomesticos.length - 1; i >= 0; i--) {  // percorre os índices do array original de trás pra frente
+  itemrevertido[contador7] = itensDomesticos[i];         // adiciona o item na posição correta do novo array
+  contador7++;                                      
+}
+
+export const resposta08 = itemrevertido;
+
+// Lista para as questões 9 a 12:
 const petsExoticos = [
   "lagarto", "tarântula", "hamster", "cacatua", "iguana",
   "escorpião", "sagui", "jacaré", "serpente", "camaleão"
