@@ -237,9 +237,9 @@ for(let i = 1; i <= 200; i++) {
         quantidadeDeAlgarismos++
     }
 }
-let soma = numerosMultiplosDe3/quantidadeDeAlgarismos
+let mediaAritmetica = numerosMultiplosDe3/quantidadeDeAlgarismos
 
-export const resposta04 = soma
+export const resposta04 = mediaAritmetica
 
 // Lista para as questões 5 a 8:
 const itensDomesticos = [
