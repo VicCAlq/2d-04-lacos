@@ -244,17 +244,15 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
-let contador = 0
-let auxiliar = 1
-while(contador < 5){
-  let nomeGuardado = nomes[contador]
-  nomes[contador] = nomes[nomes.length - auxiliar]
-  nomes[nomes.length - auxiliar] = nomeGuardado
-  contador++
-  auxiliar++
+let novaListaNomes = [""]
+let contador2 = 0
+while(contador2 < 10){
+  let nomesRemovidos = nomes.pop()
+  novaListaNomes = [nomesRemovidos]
+  console.log(novaListaNomes)
+  contador2++
 }
-console.log(nomes)
-export const resposta05 = nomes
+export const resposta05 = novaListaNomes
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -262,7 +260,7 @@ apenas os nomes que estão nos índices pares da lista original (índices 0, 2, 
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
-
+let contador3 = 0
 export const resposta06 = false
 
 /* Questão 07
