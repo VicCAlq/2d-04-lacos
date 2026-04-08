@@ -244,8 +244,17 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta05 = false
+let contador = 0
+let auxiliar = 1
+while(contador < 5){
+  let nomeGuardado = nomes[contador]
+  nomes[contador] = nomes[nomes.length - auxiliar]
+  nomes[nomes.length - auxiliar] = nomeGuardado
+  contador++
+  auxiliar++
+}
+console.log(nomes)
+export const resposta05 = nomes
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
