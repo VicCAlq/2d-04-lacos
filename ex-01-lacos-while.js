@@ -188,8 +188,14 @@ Utilizando um laço de repetição while, calcule a soma de todos os números í
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta02 = false
+let soma = 1
+let impares = 1
+while(impares <= 50){
+  console.log(soma)
+  impares += 2
+  soma = soma + impares
+}
+export const resposta02 = soma
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -198,16 +204,28 @@ array abaixo. Armazene a quantidade encontrada na variável resposta03.
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
-
-export const resposta03 = false
+const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
+let contador = 0
+while(contador < numeros.lenght){
+  if(numeros[contador] < 0){
+    console.log(numeros[contador])
+  }
+  contador++
+}
+export const resposta03 = contador
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
 entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta04 = false
+let soma = 0
+let sete = 7
+while(soma < 100){
+  soma = soma + sete
+  console.log(soma)
+}
+export const resposta04 = soma
 
 // Lista para as questões 5 a 10:
 const nomes = [
