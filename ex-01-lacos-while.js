@@ -191,9 +191,11 @@ de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta0
 let a2 = 0;
 let c = 0;
 while(c <= 50) {
+    if(c%2 != 0){
     a2 += c;
-    c += 2;
     console.log(a2);
+  }
+  c++
 }
 
 export const resposta02 = a2;
