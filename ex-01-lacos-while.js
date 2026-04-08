@@ -300,14 +300,31 @@ while (i4 < nomes.length) {
 }
 
 export const resposta08 = maiusculas;
-/* Questão 09s
+/* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
 que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver).
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
+const vogais = [];
+let i5 = 0;
 
-export const resposta09 = false
+while (i5 < nomes.length)  {
+  let primeiraLetra = nomes[i5][0];
+  if (primeiraLetra === "A" || primeiraLetra === "E" || primeiraLetra === "I" || primeiraLetra === "O" 
+    || primeiraLetra === "U" || primeiraLetra === "Á" || primeiraLetra === "É" || primeiraLetra === "Í" 
+    || primeiraLetra === "Ó" || primeiraLetra === "Ú") {
+vogais[vogais.length] = nomes[i5];
+    }
+i5 ++
+  }
+
+// Forma mais simples usando includes:
+// if ("AEIOUÁÉÍÓÚ".includes(primeiraLetra)) {
+//   vogais[vogais.length] = nomes[i5];
+// }
+
+export const resposta09 = vogais;
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -316,4 +333,15 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 */
 // Escreva o código da solução abaixo:
 
-export const resposta10 = false
+let maiorNome = nomes[0]; // começa assumindo que o primeiro nome é o maior
+let i6 = 1; // começa do segundo elemento
+
+
+while (i6 < nomes.length) {
+ // compara o tamanho do nome atual com o maior até agora
+  if (nomes[i6].length > maiorNome.length) {
+    maiorNome = nomes[i6]; // se for maior, substitui
+  }
+i6++;
+
+export const resposta10 = maiorNome;
