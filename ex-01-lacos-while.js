@@ -191,10 +191,10 @@ de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta0
 let todosImpares = 1
 let impares = 1
 while(impares <= 50){
-  console.log(todosImpares)
   impares += 2
   todosImpares = todosImpares + impares
 }
+console.log(todosImpares)
 export const resposta02 = todosImpares
 
 /* Questão 03
@@ -206,13 +206,15 @@ const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 // Escreva o código da solução abaixo:
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 let contador = 0
-while(contador < numeros.lenght){
+let negativos = 0
+while(contador < numeros.length){
   if(numeros[contador] < 0){
-    console.log(numeros[contador])
+    negativos++
   }
   contador++
 }
-export const resposta03 = contador
+console.log(negativos)
+export const resposta03 = negativos
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
@@ -223,8 +225,8 @@ let todosSetes = 0
 let sete = 7
 while(todosSetes < 100){
   todosSetes = todosSetes + sete
-  console.log(todosSetes)
 }
+console.log(todosSetes)
 export const resposta04 = todosSetes
 
 // Lista para as questões 5 a 10:

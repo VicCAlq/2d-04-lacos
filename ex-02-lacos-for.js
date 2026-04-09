@@ -201,8 +201,12 @@ Utilizando um laço de repetição for, calcule quantos números ímpares existe
 1 e 50 (incluindo o 1 e 50). Armazene a quantidade encontrada na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta02 = false
+for(let contador = 0; contador <= 50; contador++){
+  if(contador % 2 === 1){
+    console.log([contador])
+  }
+}
+export const resposta02 = contador
 
 /* Questão 03
 Utilizando um laço de repetição for, calcule a soma de todos os números pares
@@ -210,8 +214,12 @@ negativos entre -100 e -1 (incluindo o -100). Armazene o resultado na
 variável resposta03.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta03 = false
+let somaNegativosPares = 0
+for(let contador2 = -2; contador2 >= -100; contador2-=2){
+  somaNegativosPares += contador2
+}
+console.log(somaNegativosPares)
+export const resposta03 = somaNegativosPares
 
 /* Questão 04
 Utilizando um laço de repetição for, calcule a média aritmética de todos os números
@@ -219,8 +227,14 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 (pode ser decimal) na variável resposta04.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta04 = false
+let media = 0
+for(let contador = 3; contador <= 200; contador+=3){
+  media++
+  console.log(contador)
+  media = contador / media
+}
+console.log(media)
+export const resposta04 = media
 
 // Lista para as questões 5 a 8:
 const itensDomesticos = [
