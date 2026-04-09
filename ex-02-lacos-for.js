@@ -250,8 +250,14 @@ Armazene o novo array na variável resposta05.
 
 */
 // Escreva o código da solução abaixo:
-
-export const resposta05 = false
+const itensDomenticosC = []
+for(let contador = 0; contador < itensDomesticos.length; contador++){
+  if(itensDomesticos[contador][0] === "c"){
+    itensDomenticosC.push(itensDomesticos[contador])
+  }
+}
+console.log(itensDomenticosC)
+export const resposta05 = itensDomenticosC
 
 /* Questão 06
 Utilizando a mesma lista de itens domésticos da questão anterior, use um laço de
@@ -260,8 +266,12 @@ estão nos índices ímpares da lista original (índices 1, 3, 5, 7, 9, 11, 13).
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta06 = false
+const itensImpares = []
+for(let contador = 0; contador < itensDomesticos.length; contador+=3){
+    itensImpares.push(itensDomesticos[contador])
+}
+console.log(itensImpares)
+export const resposta06 = itensImpares
 
 /* Questão 07
 Seguindo com a lista de itens domésticos, use um laço de repetição for (com contador)
@@ -269,8 +279,14 @@ para criar um novo array contendo os itens com mais de 6 letras. Armazene o novo
 na variável resposta07.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta07 = false
+const itens6Letras = []
+for(let contador = 0; contador < itensDomesticos.length; contador++){
+  if (itensDomesticos[contador].length > 6){
+    itens6Letras.push(itensDomesticos[contador])
+  }
+}
+console.log(itens6Letras)
+export const resposta07 = itens6Letras
 
 /* Questão 08
 Finalizando com a lista de itens domésticos abaixo, use um laço de repetição for 
@@ -278,8 +294,11 @@ Finalizando com a lista de itens domésticos abaixo, use um laço de repetição
 o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta08 = false
+const itensDomesticosReversos = []
+for (let contador = 0; contador < itensDomesticos.length; contador++) {
+  itensDomesticosReversos.push(itensDomesticos[contador])
+}
+export const resposta08 = itensDomesticosReversos.reverse()
 
 // Lista para as questões 5 a 10:
 const petsExoticos = [
