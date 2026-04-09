@@ -244,14 +244,14 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
-let novaListaNomes = [""]
+let novaListaNomes = []
 let contador2 = 0
 while(contador2 < 10){
   let nomesRemovidos = nomes.pop()
-  novaListaNomes = [nomesRemovidos]
-  console.log(novaListaNomes)
+  novaListaNomes.push(nomesRemovidos)
   contador2++
 }
+console.log(novaListaNomes)
 export const resposta05 = novaListaNomes
 
 /* Questão 06
@@ -260,16 +260,30 @@ apenas os nomes que estão nos índices pares da lista original (índices 0, 2, 
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
+let nomesPares = []
 let contador3 = 0
-export const resposta06 = false
+while(contador3 < nomes.length) {
+  nomesPares.push(nomes[contador3])
+  contador3 += 2
+}
+console.log(nomesPares)
+export const resposta06 = nomesPares
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta07 = false
+let nomesLetras = []
+let contador4 = 0
+while(contador4 < nomes.length){
+  if(nomes[contador4].length <= 5){
+    nomesLetras.push(nomes[contador4])
+  }
+  contador4++
+}
+console.log(nomesLetras)
+export const resposta07 = nomesLetras
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
