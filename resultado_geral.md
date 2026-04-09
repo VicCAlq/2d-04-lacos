@@ -1,10 +1,10 @@
-Data de atualização: Dia 08/04/2026 às 14:36:40
+Data de atualização: Dia 09/04/2026 às 01:29:58
  
 
 | Aluno | Qtd. questões acertadas (de 15) | Nota total |
 |-------|---------------------------------|------------|
 | Adriano Filipe (adriano-filipe-nave) | 19 | 100.00 |
-| André Ricardo (andre-ricardo-nave) | 1 | 6.67 |
+| André Ricardo (andre-ricardo-nave) | 4 | 26.67 |
 | Arthur Amorim (ArthurAmorim67) | 0 | 0.00 |
 | Arthur Amorim (arthur-amorim-nave) | 0 | 0.00 |
 | Arthur Felipe (arthur-felipe-nave) | 0 | 0.00 |
@@ -13,7 +13,7 @@ Data de atualização: Dia 08/04/2026 às 14:36:40
 | Bernardo Cavalcanti (bernardoCavalcanti67) | 0 | 0.00 |
 | Bernardo Cavalcanti (bernardo-nascimento-nave) | 0 | 0.00 |
 | Bianca Beatriz (bianca-beatriz-nave) | 0 | 0.00 |
-| Brendha Priscilla (brendha-priscilla-nave) | 0 | 0.00 |
+| Brendha Priscilla (brendha-priscilla-nave) | 3 | 20.00 |
 | Breno Cavalcanti (Breno-Cavalcanti-Nave) | 0 | 0.00 |
 | Breno Costa (Breno-Costa-Nave) | 0 | 0.00 |
 | Caio BrandaoCbs (caiobrandao-cbs) | 0 | 0.00 |
@@ -42,14 +42,14 @@ Data de atualização: Dia 08/04/2026 às 14:36:40
 | Matheus Guilherme (Matheus-Guilherme-nave) | 0 | 0.00 |
 | Michel Nascimento Nave (michelnascimento-nave) | 0 | 0.00 |
 | Miguel Angelo (miguel-angelo-nave) | 0 | 0.00 |
-| Pedro Carvalho (Pedro-Carvalho-Nave) | 9 | 61.33 |
+| Pedro Carvalho (Pedro-Carvalho-Nave) | 17 | 100.00 |
 | Rianna Lavinia (Rianna-Lavinia-Nave) | 0 | 0.00 |
 | Samuel Assuncao (samuel-assuncao-nave) | 0 | 0.00 |
 | Samuel Lindoso (samuel-lindoso-nave) | 0 | 0.00 |
 | Sophia Goes (sophia-goes-nave) | 0 | 0.00 |
 | Thiago Barbosa (Thiago-Barbosa-Nave) | 0 | 0.00 |
 | Viktor Phorely Diaz (Viktor-PhorelyDiaz) | 0 | 0.00 |
-| Vinicyus Eduardo (vinicyuseduardo-alt) | 8 | 53.33 |
+| Vinicyus Eduardo (vinicyuseduardo-alt) | 0 | 0.00 |
 | Waldemir ViegasAlt (waldemirviegas-alt) | 0 | 0.00 |
 | Wesley Eder (Wesley-Eder-Nave) | 0 | 0.00 |
 | Yasmin Rocha (yasmin-rocha-nave) | 0 | 0.00 |
