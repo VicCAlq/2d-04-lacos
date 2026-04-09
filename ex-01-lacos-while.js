@@ -174,8 +174,16 @@ Crie um laço de repetição while que armazene em uma variável a soma dos núm
 de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
+let acumuladorQuestaoUm = 1
+let fimQuestaoUm = 32
+let somaQuestaoUm = 0
 
-export const resposta01 = false
+while( acumuladorQuestaoUm <= fimQuestaoUm){
+    somaQuestaoUm = somaQuestaoUm + acumuladorQuestaoUm
+    acumuladorQuestaoUm++
+    
+}
+export const resposta01 = somaQuestaoUm
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
@@ -183,7 +191,23 @@ de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta0
 */
 // Escreva o código da solução abaixo:
 
-export const resposta02 = false
+let acumuladorQuestaoDois = 1
+let fimQuestaoDois = 50
+let somaQuestaoDois = 0
+
+
+
+        while( acumuladorQuestaoDois <= fimQuestaoDois){
+        
+        somaQuestaoDois = somaQuestaoDois + acumuladorQuestaoDois
+       
+        acumuladorQuestaoDois +=2
+        
+    }
+
+
+
+export const resposta02 = somaQuestaoDois
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -193,7 +217,20 @@ const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
 
-export const resposta03 = false
+const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
+let indice=0
+let novaLista = []
+
+while (indice < numeros.length){
+    if(numeros[indice]<0){
+        novaLista.push(numeros[indice])
+    }
+    indice++
+}
+novaLista=novaLista.length
+
+
+export const resposta03 = novaLista
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
