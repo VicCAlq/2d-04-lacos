@@ -1,6 +1,6 @@
 /*
 Assunto 01 - Laços de repetição: While
-
+//
 Uma das principais utilizades de realizar uma operação como código é a possibilidade
 de repetir a execução de um conjunto de instrições que escrevemos uma única vez. A
 estrutura que nos permite isso é chamada de "Laço de Repetição".
@@ -174,90 +174,54 @@ Crie um laço de repetição while que armazene em uma variável a soma dos núm
 de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
-let a1 = 0;
-let soma = 0;
-while(a1 <= 32){
-   soma = soma + a1;
-   a1++;
-   console.log(soma);
-}
-export const resposta01 = soma;
+
+export const resposta01 = false
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-let a2 = 0;
-let c = 0;
-while(c <= 50) {
-    if(c%2 != 0){
-    a2 += c;
-    console.log(a2);
-  }
-  c++
-}
 
-export const resposta02 = a2;
+export const resposta02 = false
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
 array abaixo. Armazene a quantidade encontrada na variável resposta03.
+
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
-const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2];
-let contador = 0;
-let indic = 0;
 
-while (indic < numeros.length) {
-  if(numeros[indic] < 0){
-    contador += 1;
-  }
-  indic++;
-}
-console.log(contador);
-export const resposta03 = contador;
+export const resposta03 = false
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
 entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
-let adicionador = 0;
-let numero = 7;
 
-while (numero <= 100) {
-  if(numero % 7 === 0){
-    adicionador += numero;
-  }
-  numero = numero +1;
-}
-console.log(adicionador);
-export const resposta04 = adicionador;
+export const resposta04 = false
 
 // Lista para as questões 5 a 10:
-const nomes = ["Ana", "Bruno", "Carla", "Daniel", "Eduarda", "Fábio", "Gabriela", "Hugo", "Isabela", "João"];
+const nomes = [
+  "Ana", "Bruno", "Carla", "Daniel", "Eduarda", 
+  "Fábio", "Gabriela", "Hugo", "Isabela", "João"
+]
+
 /* DICA
 Lembrem-se que para JavaScript, textos são listas de caracteres, e portanto possuem
 as mesmas propriedades de índices e comprimento (length)
 */
 
 /* Questão 05
-Dada  lista de nomes acima, utilize um laço de repetição while para criar um
+Dada a lista de nomes acima, utilize um laço de repetição while para criar um
 novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
-
 // Escreva o código da solução abaixo:
-const novaLista = [];
-let indice2 = nomes.length - 1;
 
-while(indice2 >= 0){
-    novaLista.push(nomes[indice2]);
-      indice2--; 
-} console.log(novaLista)
-export const resposta05 = novaLista
+export const resposta05 = false
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -265,51 +229,24 @@ apenas os nomes que estão nos índices pares da lista original (índices 0, 2, 
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
-let indice3 = 0;
-let e = nomes.length;
-const segundaLista = [];
-while(indice3 < e){
-    if(indice3 % 2 === 0){
-        segundaLista.push(nomes[indice3]);
-    }
-    indice3++;
-} console.log(segundaLista)
-export const resposta06 = segundaLista
+
+export const resposta06 = false
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
-let ind = 0;
-const terceiraLista = [];
-let elemeto = nomes.length - 1;
 
-while(ind <= elemeto){
-    if(nomes[ind].length <= 5){
-        terceiraLista.push(nomes[ind]);
-    }
-    ind++;
-}
-
-export const resposta07 = terceiraLista;
+export const resposta07 = false
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
 escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
-const quartaLista = [];
-let indice4 = 0;
-let elementos = nomes.length - 1;
 
-while(indice4 <= elementos){
-    quartaLista.push(nomes[indice4].toUpperCase());
-      indice4++;
-}
-console.log(quartaLista);
-
-export const resposta08 = quartaLista
+export const resposta08 = false
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -317,19 +254,8 @@ que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver)
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
-const quintaLista=[]
-let indice5 = 0;
-let elem=nomes.length-1
 
-while(indice5<=elem){
-  if(nomes[indice5][0]=="A"||nomes[indice5][0]=="E"||nomes[indice5][0]=="I"||nomes[indice5][0]=="O"||nomes[indice5][0]=="U"){
-    quintaLista.push(nomes[indice5])
-  }
-  indice5+=1
-}
-
-
-export const resposta09 = quintaLista
+export const resposta09 = false
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -337,16 +263,5 @@ Se houver empate (mais de um nome com o mesmo comprimento máximo), armazene
 apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável resposta10.
 */
 // Escreva o código da solução abaixo:
- 
-  let maisLongo="";
-    let indice6 = 0;
-    let elem2=nomes.length-1
 
-    while(indice6 < elem2){
-    if(nomes[indice6].length > maisLongo.length){
-        maisLongo=nomes[indice6]
-    }
-    indice6+=1
-    }
-
-export const resposta10 = maisLongo
+export const resposta10 = false
