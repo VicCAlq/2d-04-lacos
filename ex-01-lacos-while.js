@@ -205,7 +205,7 @@ array abaixo. Armazene a quantidade encontrada na variável resposta03.
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
-const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2];
+/*const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2];
 let junior1 = 0;
 let robson1 = 0;
 while(robson1 <= numeros.length)
@@ -215,7 +215,7 @@ while(robson1 <= numeros.length)
   }
 robson1 = robson1 + junior1
 junior1 +=2 
-}
+}*/
 
 export const resposta03 = robson
 

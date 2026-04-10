@@ -245,14 +245,12 @@ Armazene o novo array na variável resposta05.
 
 */
 // Escreva o código da solução abaixo:
-let nomes1 = []
+/*let nomes1 = []
 for (
   let zeDoMato = 0;
   zeDoMato ,itensDomesticos.length;
   zeDoMato++
-)
-
-
+)*/
 export const resposta05 = false
 
 /* Questão 06
