@@ -251,7 +251,9 @@ para criar um novo array contendo os itens com mais de 6 letras. Armazene o novo
 na variável resposta07.
 */
 // Escreva o código da solução abaixo:
-
+let intensLongos = []
+for (let i = 0;
+  i < itensDomesticos.length;)
 export const resposta07 = false
 
 /* Questão 08
@@ -275,7 +277,12 @@ para criar um novo array contendo todos os nomes em letras maiúsculas. Armazene
 novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
+let petsMaiusculos = []
+for (let pet of petsExoticos) {
+  petsMaiusculos.push(
 
+  )
+}
 export const resposta09 = false
 
 /* Questão 10
@@ -317,5 +324,11 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
-
+let petComS = "não encontrado"
+for (let pet of petsExoticos) {
+  if (
+    pet[0] === "s"
+    && petComS === "não encontrado"
+  )
+}
 export const resposta12 = false

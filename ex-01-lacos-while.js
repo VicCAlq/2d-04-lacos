@@ -220,6 +220,11 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
+let i05 = nomes.length - 1
+let nomesInv = []
+while( i05 >= 0 ) {
+  nomesInv.push(nomes[i05])
+}
 
 export const resposta05 = false
 
@@ -237,7 +242,8 @@ Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
-
+let curtos = []
+let i07 =
 export const resposta07 = false
 
 /* Questão 08
