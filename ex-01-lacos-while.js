@@ -238,7 +238,21 @@ entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta04 = false
+let acumuladorQuestaoQuatro = 1
+let limiteQuestaoQuatro = 100
+let somaQuestaoQuatro = 0
+
+while(acumuladorQuestaoQuatro<=limiteQuestaoQuatro){
+
+    if(acumuladorQuestaoQuatro%7==0){
+    somaQuestaoQuatro = somaQuestaoQuatro+acumuladorQuestaoQuatro
+    }
+    acumuladorQuestaoQuatro++
+}
+
+
+export const resposta04 = somaQuestaoQuatro
+
 
 // Lista para as questões 5 a 10:
 const nomes = [
@@ -257,6 +271,15 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
+
+let nomesInvertidos=[]
+let indiceQuestaoCinco = nomes.length - 1
+
+while(indice>=nomesInvertidos.length){
+  nomesInvertidos.push(nomes[indice])
+  indice++
+}
+
 
 export const resposta05 = false
 
