@@ -174,7 +174,6 @@ Crie um laço de repetição while que armazene em uma variável a soma dos núm
 de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
-
 let i01 = 0
 let soma01 = 0
 while (i01 <= 32){
