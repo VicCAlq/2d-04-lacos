@@ -272,7 +272,7 @@ while  (acc1 >= 0){
   reversa.push(reversa[acc1])
 }
 
-export const resposta05 = false
+export const resposta05 = novaLista
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -280,24 +280,44 @@ apenas os nomes que estão nos índices pares da lista original (índices 0, 2, 
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta06 = false
+novaLista = []
+i = 0
+    while (i < nomes.length){
+        if (i%2 == 0){
+            novaLista.push(nomes[i])
+        }
+        i++
+    }
+export const resposta06 = novaLista
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta07 = false
+novaLista = []
+i = 0
+    while (i < nomes.length){
+        if (nomes[i].length <= 4){
+            novaLista.push(nomes[i])
+        }
+        i++
+    }
+export const resposta07 = novaLista
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
 escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
+novaLista = []
+i = 0
+    while (i<nomes.length){
+        novaLista.push(nomes[i].toUpperCase())
+        i++
+    }
 
-export const resposta08 = false
+export const resposta08 = novaLista
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -305,8 +325,16 @@ que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver)
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta09 = false
+novaLista = []
+i = 0
+    while (i<nomes.length){
+        if (nomes[i][0] == "A" || nomes[i][0] == "E" || nomes[i][0] == "I" || nomes[i][0] == "O" || nomes[i][0] == "U"){
+            novaLista.push(nomes[i])
+            
+        }
+        i++
+    }
+export const resposta09 = novaLista
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -314,5 +342,12 @@ Se houver empate (mais de um nome com o mesmo comprimento máximo), armazene
 apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável resposta10.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta10 = false
+let nomeLongo = "a"
+i = 0
+    while (i < nomes.length){
+        if (nomes[i].length >= nomeLongo.length){
+            nomeLongo = nomes[i]
+        }
+        i++
+    }
+export const resposta10 = nomeLongo
