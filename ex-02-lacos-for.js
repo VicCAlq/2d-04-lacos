@@ -218,7 +218,6 @@ let somaNegativosPares = 0
 for(let contador2 = -2; contador2 >= -100; contador2-=2){
   somaNegativosPares += contador2
 }
-console.log(somaNegativosPares)
 export const resposta03 = somaNegativosPares
 
 /* Questão 04
@@ -227,12 +226,14 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 (pode ser decimal) na variável resposta04.
 */
 // Escreva o código da solução abaixo:
+let soma1 = 0
+let quantidade = 0
 let media = 0
 for(let contador = 3; contador <= 200; contador+=3){
-  media++
-  console.log(contador)
-  media = contador / media
+  soma += contador
+  quantidade++
 }
+media = soma / quantidade
 console.log(media)
 export const resposta04 = media
 
@@ -256,7 +257,6 @@ for(let contador = 0; contador < itensDomesticos.length; contador++){
     itensDomenticosC.push(itensDomesticos[contador])
   }
 }
-console.log(itensDomenticosC)
 export const resposta05 = itensDomenticosC
 
 /* Questão 06
@@ -270,7 +270,6 @@ const itensImpares = []
 for(let contador = 0; contador < itensDomesticos.length; contador+=3){
     itensImpares.push(itensDomesticos[contador])
 }
-console.log(itensImpares)
 export const resposta06 = itensImpares
 
 /* Questão 07
@@ -285,7 +284,6 @@ for(let contador = 0; contador < itensDomesticos.length; contador++){
     itens6Letras.push(itensDomesticos[contador])
   }
 }
-console.log(itens6Letras)
 export const resposta07 = itens6Letras
 
 /* Questão 08
@@ -312,8 +310,11 @@ para criar um novo array contendo todos os nomes em letras maiúsculas. Armazene
 novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta09 = false
+let petsMaiusculos = 0
+for(let pet of petsExoticos){
+  petsMaiusculos.push(pet.toUpperCase())
+}
+export const resposta09 = petsMaiusculos
 
 /* Questão 10
 Com a mesma lista de pets exóticos acima, use um laço de repetição for...of para
@@ -354,5 +355,10 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
-
-export const resposta12 = false
+let petComS = "não encontrado"
+for(let pet of petsExoticos){
+  if(pet[0] === "s" && petComS === "não encontrado"){
+    petComS = pet
+  }
+}
+export const resposta12 = petComS

@@ -174,12 +174,11 @@ Crie um laço de repetição while que armazene em uma variável a soma dos núm
 de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
-let a1 = 0;
-let soma = 0;
+let a1 = 0
+let soma = 0
 while(a1 <= 32){
-   soma = soma + a1;
-   a1++;
-   console.log(soma);
+   soma = soma + a1
+   a1++
 }
 export const resposta01 = soma
 
@@ -190,11 +189,10 @@ de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta0
 // Escreva o código da solução abaixo:
 let todosImpares = 0
 let impares = 1
-while(impares < 50){
+while(impares <= 50){
   todosImpares += impares
   impares += 2
 }
-console.log(todosImpares)
 export const resposta02 = todosImpares
 
 /* Questão 03
@@ -213,7 +211,6 @@ while(contador < numeros.length){
   }
   contador++
 }
-console.log(negativos)
 export const resposta03 = negativos
 
 /* Questão 04
@@ -227,7 +224,6 @@ while(sete <= 100){
   todosSetes = todosSetes + sete
   sete = sete + 7
 }
-console.log(todosSetes)
 export const resposta04 = todosSetes
 
 // Lista para as questões 5 a 10:
@@ -248,13 +244,11 @@ na variável resposta05.
 */
 // Escreva o código da solução abaixo:
 let novaListaNomes = []
-let contador2 = 0
-while(contador2 < 10){
-  let nomesRemovidos = nomes.pop()
-  novaListaNomes.push(nomesRemovidos)
-  contador2++
+let contador2 = nomes.length - 1
+while(contador2 >= 0){
+  novaListaNomes.push(nomes[contador2])
+  contador2--
 }
-console.log(novaListaNomes)
 export const resposta05 = novaListaNomes
 
 /* Questão 06
@@ -269,7 +263,6 @@ while(contador3 < nomes.length) {
   nomesPares.push(nomes[contador3])
   contador3 += 2
 }
-console.log(nomesPares)
 export const resposta06 = nomesPares
 
 /* Questão 07
@@ -285,7 +278,6 @@ while(contador4 < nomes.length){
   }
   contador4++
 }
-console.log(nomesLetras)
 export const resposta07 = nomesLetras
 
 /* Questão 08
@@ -302,8 +294,27 @@ que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver)
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta09 = false
+let nomesVogais = []
+let i09 = 0
+while (i09 < nomes.length){
+  if(nomes[i09][0] === "A"){
+    nomesVogais.push(nomes[i09])
+  }
+    if(nomes[i09][0] === "E"){
+    nomesVogais.push(nomes[i09])
+  }
+    if(nomes[i09][0] === "I"){
+    nomesVogais.push(nomes[i09])
+  }
+    if(nomes[i09][0] === "O"){
+    nomesVogais.push(nomes[i09])
+  }
+    if(nomes[i09][0] === "U"){
+    nomesVogais.push(nomes[i09])
+  }
+  i09++
+}
+export const resposta09 = nomesVogais
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
