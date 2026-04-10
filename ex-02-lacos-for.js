@@ -204,15 +204,15 @@ Utilizando um laço de repetição for, calcule quantos números ímpares existe
 */
 // Escreva o código da solução abaixo:
 
-let acumulador = 0
+let acumulador3 = 0
 
 for (i = 0; i <= 50; i++) {
   if (i % 2 == 0) {
-    acumulador++
+    acumulador3++
   }
 }
 
-export const resposta02 = acumulador
+export const resposta02 = acumulador3
 
 /* Questão 03
 Utilizando um laço de repetição for, calcule a soma de todos os números pares
@@ -279,7 +279,7 @@ let array = []
 
 for (i = 0; i < itensDomesticos.length; i++) {
   if (itensDomesticos[i].toLowerCase.startsWith("a")) {
-    array2.push(i)
+    array.push(i)
   }
 }
 
