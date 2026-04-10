@@ -1,6 +1,6 @@
 /*
 Assunto 01 - Laços de repetição: While
-
+//
 Uma das principais utilizades de realizar uma operação como código é a possibilidade
 de repetir a execução de um conjunto de instrições que escrevemos uma única vez. A
 estrutura que nos permite isso é chamada de "Laço de Repetição".
@@ -175,13 +175,26 @@ de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta01 = false
+let i01 = 0
+let soma01 = 0
+while (i01 <= 32){
+  soma01 = soma01 + i01
+  i02 ++
+}
+
+export const resposta01 = soma01
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
+let i02 = 1
+let soma02 = 0
+while (i02 <= 50){
+  soma02 = soma02 + i02
+  i02 += 2
+}
 
 export const resposta02 = false
 
@@ -192,8 +205,16 @@ array abaixo. Armazene a quantidade encontrada na variável resposta03.
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
-
-export const resposta03 = false
+const numSort = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
+let i03 = 0
+let quantNeg = 0
+while (i03 < numSort.length){
+  if (numSort[i03] < 0) {
+    quantNeg ++
+  }
+  i03 ++
+}
+export const resposta03 = quantNeg
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
@@ -221,7 +242,14 @@ na variável resposta05.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta05 = false
+let i05 = nomes.length - 1
+let nomesInv = []
+while( i05 >= 0 ) {
+  nomesInv.push(nomes[i05])
+  i05--
+}
+
+export const resposta05 = nomesInv
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -237,6 +265,17 @@ Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
+let curtos = []
+let i07 = 0
+while (i07 < nomes.length) {
+  if (nomes[i07].length < 6) {
+    curtos.push(nomes[i07])
+  }
+  i07 ++
+}
+
+nomes.length = "comprimento da lista"
+nomes[0].length = "comprimento do item de texto"
 
 export const resposta07 = false
 
@@ -254,8 +293,28 @@ que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver)
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
+let nomesVogais = []
+let i09 = 0
+while (i09 < nomes.length) {
+  if (nomes[i09][0] === "A") {
+    nomesVogais.push(nomes[i09])
+  }
+  if (nomes[i09][0] === "E") {
+    nomesVogais.push(nomes[i09])
+  }
+  if (nomes[i09][0] === "I") {
+    nomesVogais.push(nomes[i09])
+  }
+  if (nomes[i09][0] === "O") {
+    nomesVogais.push(nomes[i09])
+  }
+  if (nomes[i09][0] === "U") {
+    nomesVogais.push(nomes[i09])
+  }
+  i09 ++
+}
 
-export const resposta09 = false
+export const resposta09 = nomesVogais
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -265,3 +324,4 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 // Escreva o código da solução abaixo:
 
 export const resposta10 = false
+
