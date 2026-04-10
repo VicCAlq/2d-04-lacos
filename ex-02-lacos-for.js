@@ -190,7 +190,13 @@ Utilizando um laço de repetição for, calcule a soma de todos os números de 1
 */
 // Escreva o código da solução abaixo:
 
-export const resposta01 = false
+let soma = 0
+
+for (i = 0; i <= 100; i++) {
+  soma += i
+}
+
+export const resposta01 = soma
 
 /* Questão 02
 Utilizando um laço de repetição for, calcule quantos números ímpares existem entre
@@ -198,7 +204,15 @@ Utilizando um laço de repetição for, calcule quantos números ímpares existe
 */
 // Escreva o código da solução abaixo:
 
-export const resposta02 = false
+let acumulador = 0
+
+for (i = 0; i <= 50; i++) {
+  if (i % 2 == 0) {
+    acumulador++
+  }
+}
+
+export const resposta02 = acumulador
 
 /* Questão 03
 Utilizando um laço de repetição for, calcule a soma de todos os números pares
@@ -207,7 +221,20 @@ variável resposta03.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta03 = false
+let acumulador = 0
+let neg = []
+
+for (i = -100;i >= -1; i--) {
+  if (i % 2 == 0) {
+    neg.push(i)
+  }
+}
+
+for (let soma of neg) {
+  acumulador += soma
+}
+
+export const resposta03 = acumulador
 
 /* Questão 04
 Utilizando um laço de repetição for, calcule a média aritmética de todos os números
@@ -216,7 +243,22 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 */
 // Escreva o código da solução abaixo:
 
-export const resposta04 = false
+let acumulador1 = 0
+let media = []
+
+for (i = 1; i < 200; i++) {
+  if (i % 3 == 0) {
+    media.push(i)
+  }
+}
+
+for (let ac of media) {
+  acumulador1 += ac
+}
+
+acumulador1 /= media.length
+
+export const resposta04 = acumulador1
 
 // Lista para as questões 5 a 8:
 const itensDomesticos = [
@@ -232,8 +274,16 @@ Armazene o novo array na variável resposta05.
 
 */
 // Escreva o código da solução abaixo:
+let array = []
 
-export const resposta05 = false
+
+for (i = 0; i < itensDomesticos.length; i++) {
+  if (itensDomesticos[i].toLowerCase.startsWith("a")) {
+    array2.push(i)
+  }
+}
+
+export const resposta05 = array
 
 /* Questão 06
 Utilizando a mesma lista de itens domésticos da questão anterior, use um laço de
