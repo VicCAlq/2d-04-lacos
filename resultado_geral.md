@@ -1,10 +1,10 @@
-Data de atualização: Dia 09/04/2026 às 20:53:43
+Data de atualização: Dia 10/04/2026 às 13:35:47
  
 
-| Aluno | Qtd. questões acertadas (de 15) | Nota total |
+| Aluno | Qtd. questões acertadas (de 17) | Nota total |
 |-------|---------------------------------|------------|
 | Adriano Filipe (adriano-filipe-nave) | 19 | 100.00 |
-| André Ricardo (andre-ricardo-nave) | 3 | 25.33 |
+| André Ricardo (andre-ricardo-nave) | 5 | 31.76 |
 | Arthur Amorim (ArthurAmorim67) | 0 | 0.00 |
 | Arthur Amorim (arthur-amorim-nave) | 0 | 0.00 |
 | Arthur Felipe (arthur-felipe-nave) | 0 | 0.00 |
@@ -13,22 +13,22 @@ Data de atualização: Dia 09/04/2026 às 20:53:43
 | Bernardo Cavalcanti (bernardoCavalcanti67) | 0 | 0.00 |
 | Bernardo Cavalcanti (bernardo-nascimento-nave) | 0 | 0.00 |
 | Bianca Beatriz (bianca-beatriz-nave) | 0 | 0.00 |
-| Brendha Priscilla (brendha-priscilla-nave) | 3 | 20.00 |
+| Brendha Priscilla (brendha-priscilla-nave) | 3 | 17.65 |
 | Breno Cavalcanti (Breno-Cavalcanti-Nave) | 0 | 0.00 |
 | Breno Costa (Breno-Costa-Nave) | 0 | 0.00 |
 | Caio BrandaoCbs (caiobrandao-cbs) | 0 | 0.00 |
 | Caio Brandao (caio-brandao-nave) | 0 | 0.00 |
 | Caua Rafael (caua-rafael-nave) | 0 | 0.00 |
 | Clarice Vitoria (clarice-vitoria-nave) | 0 | 0.00 |
-| David Luduvico (David-luduvico-nave) | 0 | 1.33 |
+| David Luduvico (David-luduvico-nave) | 0 | 1.18 |
 | Davi Emmanuel (Davi1008) | 0 | 0.00 |
 | Eduardo Crisriano (eduardo-cristiano-nave) | 0 | 0.00 |
 | Emilly Maciel (emilly-maciel-nave26) | 0 | 0.00 |
 | Gabriel Cavalcanti (gabrielcavalcanti-16) | 0 | 0.00 |
 | Gabriel Cavalcanti (gabriel-cavalcanti-nave) | 0 | 0.00 |
-| Gabriel Leal (Gabriel-Leal-Nave) | 1 | 6.67 |
+| Gabriel Leal (Gabriel-Leal-Nave) | 1 | 5.88 |
 | Gabriel Tavares (Gabriel-Tavares-NAVE) | 0 | 0.00 |
-| Gustavo Henrique (gustavo-henrique-NAVE) | 1 | 6.67 |
+| Gustavo Henrique (gustavo-henrique-NAVE) | 1 | 5.88 |
 | Heytor Eloy (heytor-eloy-nave) | 0 | 0.00 |
 | Imael Isaque (Imael-isaque-nave) | 0 | 0.00 |
 | Jailson Ferreira (Jailson-Ferreira-nave) | 0 | 0.00 |
