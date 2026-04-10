@@ -180,7 +180,7 @@ let soma01 = 0;
 while(i01 <= 32){
    soma01 = soma01 + i01;
    i01++;
-   console.log(soma01);
+ 
 }
 export const resposta01 = soma01;
 
@@ -226,7 +226,7 @@ let numero = 7;
 while (numero <= 100) {
   adicionador += numero;
   numero += 7;
-}console.log(adicionador);
+}
 export const resposta04 = adicionador;
 
 // Lista para as questões 5 a 10:
@@ -249,7 +249,7 @@ let indice2 = nomes.length - 1;
 while(indice2 >= 0){
     novaLista.push(nomes[indice2]);
     indice2--; 
-} console.log(novaLista)
+} 
 export const resposta05 = novaLista
 
 /* Questão 06
@@ -266,7 +266,7 @@ while(indice3 < e){
         segundaLista.push(indice3);
     }
     indice3++;
-} console.log(segundaLista)
+}
 export const resposta06 = segundaLista
 
 /* Questão 07
@@ -285,7 +285,6 @@ while(ind <= elemento){
     ind++;
 }
 
-console.log(terceiraLista);
 export const resposta07 = terceiraLista;
 
 /* Questão 08
@@ -301,7 +300,6 @@ while(indice4 <= elementos){
     quartaLista.push(nomes[quartaLista].toUpperCase());
     indice4++;
 }
-console.log(quartaLista);
 
 export const resposta08 = quartaLista
 
