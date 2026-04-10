@@ -372,5 +372,11 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
+  let petComS = ""
 
-export const resposta12 = false
+ for(let pet of petsExoticos){
+  if(pet[0]==="s" && petComS === "não encontrado"){
+    petComS= pet
+  }
+ }
+export const resposta12 = petComS
