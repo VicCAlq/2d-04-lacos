@@ -188,11 +188,11 @@ Utilizando um laço de repetição while, calcule a soma de todos os números í
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-let todosImpares = 1
+let todosImpares = 0
 let impares = 1
-while(impares <= 50){
+while(impares < 50){
+  todosImpares += impares
   impares += 2
-  todosImpares = todosImpares + impares
 }
 console.log(todosImpares)
 export const resposta02 = todosImpares
@@ -223,8 +223,9 @@ entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 // Escreva o código da solução abaixo:
 let todosSetes = 0 
 let sete = 7
-while(todosSetes < 100){
+while(sete <= 100){
   todosSetes = todosSetes + sete
+  sete = sete + 7
 }
 console.log(todosSetes)
 export const resposta04 = todosSetes
