@@ -207,7 +207,12 @@ variável resposta03.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta03 = false
+let soma = 0
+for (let i = -100; i < 0; i+= 2) {
+  soma += i
+}
+
+export const resposta03 = soma
 
 /* Questão 04
 Utilizando um laço de repetição for, calcule a média aritmética de todos os números
@@ -215,8 +220,16 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 (pode ser decimal) na variável resposta04.
 */
 // Escreva o código da solução abaixo:
+let soma = 0
+let quantidade = 0
+let media = 0
+for(let i = 0; i <= 200; i += 3) {
+  soma += i
+}
 
-export const resposta04 = false
+media = soma / quantidade
+
+export const resposta04 = media
 
 // Lista para as questões 5 a 8:
 const itensDomesticos = [
@@ -232,8 +245,14 @@ Armazene o novo array na variável resposta05.
 
 */
 // Escreva o código da solução abaixo:
+let nomesC = []
+for (let i = 0; i < itensDomesticos.length; i++) {
+  if(itensDomesticos[i][0] === "C") {
+    noesC.push(itensDomesticos[i])
+  }
+}
 
-export const resposta05 = false
+export const resposta05 = nomesC
 
 /* Questão 06
 Utilizando a mesma lista de itens domésticos da questão anterior, use um laço de
@@ -242,6 +261,8 @@ estão nos índices ímpares da lista original (índices 1, 3, 5, 7, 9, 11, 13).
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
+
+
 
 export const resposta06 = false
 
@@ -276,8 +297,14 @@ novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta09 = false
+let petsMaisculos = []
+for (let pet of petsExoticos) {
+  petsMaisculos.push(
+    pet.toUpperCase()
+  )
+}
 
+export const resposta09 = petsMaisculos
 /* Questão 10
 Com a mesma lista de pets exóticos acima, use um laço de repetição for...of para
 criar um novo array contendo apenas os nomes que possuem a letra "r" em qualquer posição.
@@ -317,5 +344,12 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
+
+let petsComs = ""
+for (let pet of petsExoticos){
+  if ( pet[0] === "S"
+    && petsComs === "não encontrado"
+  ) { petsComs = pet}
+}
 
 export const resposta12 = false
