@@ -299,7 +299,10 @@ Finalizando com a lista de itens domésticos abaixo, use um laço de repetição
 o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
-
+/*const itensDomesticosReverso=[]
+for(let i=0;i<itensDomesticos.length;i++){
+  itensDomesticosReverso.push(itensDomesticos.reverse())
+}*/
 export const resposta08 = false
 
 // Lista para as questões 5 a 10:
@@ -314,8 +317,11 @@ para criar um novo array contendo todos os nomes em letras maiúsculas. Armazene
 novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta09 = false
+const petsExoticosMaiusculas=[]
+for(let pets of petsExoticos){  
+    petsExoticosMaiusculas.push(pets.toUpperCase())
+}
+export const resposta09 = petsExoticosMaiusculas
 
 /* Questão 10
 Com a mesma lista de pets exóticos acima, use um laço de repetição for...of para
@@ -328,8 +334,13 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
-
-export const resposta10 = false
+const petsExoticosComR=[]
+for(let petsR of petsExoticos){
+    if(petsR.includes()==true){
+        petsExoticosComR.push(petsR)
+    }
+}
+export const resposta10 = petsExoticosComR
 
 /* Questão 11
 Continuando com a lista de pets exóticos, use um laço de repetição for...of para
@@ -342,8 +353,13 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
-
-export const resposta11 = false
+const petsExoticosCom7Letras=[]
+for(let pets7 of petsExoticos){
+ if(pets7.length > 7){
+    petsExoticosCom7Letras.push(pets7)
+ }
+}
+export const resposta11 = petsExoticosCom7Letras
 
 /* Questão 12
 Encerrando com a lista de pets exóticos, use um laço de repetição for...of para

@@ -292,7 +292,6 @@ while(ind <= elemeto){
     ind++;
 }
 
-console.log(terceiraLista);
 export const resposta07 = terceiraLista;
 
 /* Questão 08
