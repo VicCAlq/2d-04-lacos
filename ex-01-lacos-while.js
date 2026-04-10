@@ -175,53 +175,82 @@ de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta01 = false
+let i01 = 0;
+let soma01 = 0;
+while(i01 <= 32){
+   soma01 = soma01 + i01;
+   i01++;
+   console.log(soma01);
+}
+export const resposta01 = soma01;
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
+let a2 = 0;
+let c = 1;
+while(c <= 50) {
+    a2 += c;
+    c += 2;
+    a2 += 2
+}
 
-export const resposta02 = false
+export const resposta02 = a2;
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
 array abaixo. Armazene a quantidade encontrada na variável resposta03.
-
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
+const numsort = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2];
+let i03 = 0;
+let quantNeg = 0;
 
-export const resposta03 = false
+while (quantNeg < numsorte.length) {
+  i03 += numsorte[quantNeg++] < 0;
+}
+i03 ++
+export const resposta03 = quantNeg;
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
 entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
+let adicionador = 0;
+let numero = 7;
 
-export const resposta04 = false
+while (numero <= 100) {
+  adicionador += numero;
+  numero += 7;
+}console.log(adicionador);
+export const resposta04 = adicionador;
 
 // Lista para as questões 5 a 10:
-const nomes = [
-  "Ana", "Bruno", "Carla", "Daniel", "Eduarda", 
-  "Fábio", "Gabriela", "Hugo", "Isabela", "João"
-]
-
+const nomes = ["Ana", "Bruno", "Carla", "Daniel", "Eduarda", "Fábio", "Gabriela", "Hugo", "Isabela", "João"];
 /* DICA
 Lembrem-se que para JavaScript, textos são listas de caracteres, e portanto possuem
 as mesmas propriedades de índices e comprimento (length)
 */
 
 /* Questão 05
-Dada a lista de nomes acima, utilize um laço de repetição while para criar um
+Dada  lista de nomes acima, utilize um laço de repetição while para criar um
 novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
-// Escreva o código da solução abaixo:
 
-export const resposta05 = false
+// Escreva o código da solução abaixo:
+const novaLista = [];
+let indice2 = nomes.length - 1;
+
+while(indice2 >= 0){
+    novaLista.push(nomes[indice2]);
+    indice2--; 
+} console.log(novaLista)
+export const resposta05 = novaLista
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -229,24 +258,52 @@ apenas os nomes que estão nos índices pares da lista original (índices 0, 2, 
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta06 = false
+let indice3 = 0;
+let e = nomes.length;
+const segundaLista = [];
+while(indice3 < e){
+    if(indice3 % 2 === 0){
+        segundaLista.push(indice3);
+    }
+    indice3++;
+} console.log(segundaLista)
+export const resposta06 = segundaLista
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
+let ind = 0;
+const terceiraLista = [];
+let elemeto = nomes.length - 1;
 
-export const resposta07 = false
+while(ind <= elemento){
+    if(nomes[ind].length <= 5){
+        terceiraLista.push(nomes[ind]);
+    }
+    ind++;
+}
+
+console.log(terceiraLista);
+export const resposta07 = terceiraLista;
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
 escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
+const quartaLista = [];
+let indice4 = 0;
+let elementos = nomes.length - 1;
 
-export const resposta08 = false
+while(indice4 <= elementos){
+    quartaLista.push(nomes[quartaLista].toUpperCase());
+    indice4++;
+}
+console.log(quartaLista);
+
+export const resposta08 = quartaLista
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -254,7 +311,15 @@ que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver)
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
+let nomeVogais = []
+let i09 = 0
+while (i09 < nomeVogais.length) 
+    {
 
+      if (nomes [i09][0]);
+      //falta responder, mals ai
+      
+    }
 export const resposta09 = false
 
 /* Questão 10
