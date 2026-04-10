@@ -174,21 +174,29 @@ Crie um laço de repetição while que armazene em uma variável a soma dos núm
 de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
-let sonic = 1
+let sonic = 0
 let shadow = 0
-while(shadow <= sonic)
+while(sonic <= 32)
 {
-
+shadow = shadow + sonic
+sonic++;
 }
-export const resposta01 = false
+export const resposta01 = shadow
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
+let junior = 0
+let robson = 0
+while(robson <= 50)
+{
+robson = robson + junior
+junior +=2 
+}
 
-export const resposta02 = false
+export const resposta02 = junior
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -197,8 +205,19 @@ array abaixo. Armazene a quantidade encontrada na variável resposta03.
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
+const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2];
+let junior1 = 0;
+let robson1 = 0;
+while(robson1 <= numeros.length)
+{
+  if([junior1]){
 
-export const resposta03 = false
+  }
+robson1 = robson1 + junior1
+junior1 +=2 
+}
+
+export const resposta03 = robson
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
@@ -225,8 +244,13 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta05 = false
+let mario =nomes.length - 1 
+let peach = []
+while(mario >= 0) {
+  peach.push(nomes[mario])
+  mario--;
+}
+export const resposta05 = mario
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -242,8 +266,17 @@ Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
+let pequeno =[]
+let drNefario = 0
+wihle (drNefario < nomes.length)
+{
+  if(nomes[drNefario].length <6){
+    pequeno.push(nomes[drNefario])
+  }  
+  drNefario++;
+}
 
-export const resposta07 = false
+export const resposta07 = pequeno
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
@@ -259,6 +292,7 @@ que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver)
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
+
 
 export const resposta09 = false
 

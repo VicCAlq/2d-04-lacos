@@ -206,6 +206,11 @@ negativos entre -100 e -1 (incluindo o -100). Armazene o resultado na
 variável resposta03.
 */
 // Escreva o código da solução abaixo:
+let somaZeDaManga = 0
+for(let zeDoMato = -100; zeDoMato < 0; zeDoMato+=2 )
+{
+somaZeDaManga +=zeDoMato
+}
 
 export const resposta03 = false
 
@@ -215,7 +220,15 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 (pode ser decimal) na variável resposta04.
 */
 // Escreva o código da solução abaixo:
-
+let somaZeDaMangaPT2 = 0
+let quantidadeCurisca =0
+let mediaCurisco = 0
+for (let zeDoMato = 0; zeDoMato <= 200; zeDoMato+= 3 )
+{
+somaZeDaMangaPT2 += zeDoMato
+quantidadeCurisca ++;
+}
+mediaCurisco = somaZeDaMangaPT2 / quantidadeCurisca
 export const resposta04 = false
 
 // Lista para as questões 5 a 8:
@@ -232,6 +245,13 @@ Armazene o novo array na variável resposta05.
 
 */
 // Escreva o código da solução abaixo:
+let nomes1 = []
+for (
+  let zeDoMato = 0;
+  zeDoMato ,itensDomesticos.length;
+  zeDoMato++
+)
+
 
 export const resposta05 = false
 
@@ -251,6 +271,16 @@ para criar um novo array contendo os itens com mais de 6 letras. Armazene o novo
 na variável resposta07.
 */
 // Escreva o código da solução abaixo:
+let itensBigs = []
+for (let i = 0;
+  i<itensDomesticos.length;
+  i++
+){
+  if(itensDomesticos[i].length > 6)
+  {
+    itensBigs.push
+  }
+}
 
 export const resposta07 = false
 
@@ -275,6 +305,14 @@ para criar um novo array contendo todos os nomes em letras maiúsculas. Armazene
 novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
+let petsMasculos = []
+for (let pet of petsExoticos)
+{
+  petsMasculos.push
+  {
+    pet.toUpperCase()
+  }
+}
 
 export const resposta09 = false
 
@@ -317,5 +355,14 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
-
+let petComS = "não encontrado"
+for (let pet of petsExoticos)
+{
+if (
+  pet[0] ==="s"
+  && petComS === "não encontrado"
+) { 
+ petComS = pet 
+}
+}
 export const resposta12 = false
