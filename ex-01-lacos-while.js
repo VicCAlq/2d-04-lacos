@@ -174,8 +174,14 @@ Crie um laço de repetição while que armazene em uma variável a soma dos núm
 de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
+let agua = 1
+let copo = 0
+while (agua<=32){
+  copo = copo + agua;
+  agua ++;
+}
 
-export const resposta01 = false
+export const resposta01 = copo
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
@@ -183,7 +189,13 @@ de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta0
 */
 // Escreva o código da solução abaixo:
 
-export const resposta02 = false
+let rosa=1
+let cheiro= 0
+while(rosa<=50){
+  cheiro+= rosa
+  rosa += 2
+}
+export const resposta02 = cheiro
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -192,16 +204,34 @@ array abaixo. Armazene a quantidade encontrada na variável resposta03.
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
+const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
+let indice=0
+let novaLista = []
 
-export const resposta03 = false
+while (indice < numeros.length){
+    if(numeros[indice]<0){
+        novaLista.push(numeros[indice])
+    }
+    indice++
+}
+novaLista=novaLista.length
+export const resposta03 = novaLista
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
 entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
+
 */
 // Escreva o código da solução abaixo:
+let mult7 = 0;
+let adicao = 7;
 
-export const resposta04 = false
+while (adicao <= 100) {
+   mult7 += adicao;
+  adicao += 7;
+    
+}
+export const resposta04 = mult7
 
 // Lista para as questões 5 a 10:
 const nomes = [
@@ -220,8 +250,15 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
+const listaReverse = [];
 
-export const resposta05 = false
+let i1 = nomes.length - 1;
+while (i1 >= 0) {
+  //.push adciona no final 
+  listaReverse.push(nomes[i1]);
+  i1--
+}
+export const resposta05 = listaReverse
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -230,23 +267,45 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta06 = false
+const sopar = []
+let i2 = 0;
+while (i2 <= 8) {
+  sopar[sopar.length] = nomes[i2];
+  i2 += 2;
+}
+export const resposta06 = sopar;
+
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
+ const curtos = []
+let i3 = 0;
 
-export const resposta07 = false
+while (i3 < nomes.length) {
+  if (nomes[i3].length <= 5) {
+    curtos[curtos.length] = nomes[i3];
+  }
+  i3++
+}  
+
+export const resposta07 = curtos
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
 escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
+const maiusculas = [];
+let i4 = 0;
 
-export const resposta08 = false
+while (i4 < nomes.length) {
+  maiusculas[maiusculas.length] = nomes[i4].toUpperCase();
+  i4++;
+}
+export const resposta08 = maiusculas
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -254,8 +313,20 @@ que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver)
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
+const quintaLista=[]
+let indice5 = 0;
+let elem=nomes.length-1
 
-export const resposta09 = false
+while(indice5<=elem){
+  if(nomes[indice5][0]=="A"||nomes[indice5][0]=="E"||nomes[indice5][0]=="I"||nomes[indice5][0]=="O"||nomes[indice5][0]=="U"){
+    quintaLista.push(nomes[indice5])
+  }
+  indice5+=1
+}
+
+
+export const resposta09 = quintaLista
+
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -263,5 +334,15 @@ Se houver empate (mais de um nome com o mesmo comprimento máximo), armazene
 apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável resposta10.
 */
 // Escreva o código da solução abaixo:
+ let maisLongo="";
+    let indice6 = 0;
+    let elem2=nomes.length-1
 
-export const resposta10 = false
+    while(indice6 < elem2){
+    if(nomes[indice6].length > maisLongo.length){
+        maisLongo=nomes[indice6]
+    }
+    indice6+=1
+    }
+
+export const resposta10 = maisLongo
