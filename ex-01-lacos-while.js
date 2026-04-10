@@ -175,7 +175,13 @@ de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta01 = false
+let acumulador = 1 
+
+while (acumulador < 32) {
+  acumulador++
+}
+
+export const resposta1 = acumulador
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
@@ -183,7 +189,16 @@ de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta0
 */
 // Escreva o código da solução abaixo:
 
-export const resposta02 = false
+let ac = 1
+
+while (ac < 50 ) {
+  if (ac % 2 == 0) {   
+    ac++
+  }
+
+}
+
+export const resposta2 = ac
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -193,7 +208,19 @@ const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
 
-export const resposta03 = false
+const numeros = [ 15, -3,  8, -12, 0, -7, 22, -1, 9, -5, 18, -2] 
+
+let ac1 = 0 
+let impar = 0
+
+while (ac1 < numeros.length) {
+  ac1++
+  if (numeros[ac1] % 2 == 0) {
+    impar++
+  }
+}
+
+export const resposta03 = impar
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
@@ -201,7 +228,23 @@ entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta04 = false
+let acc = 1 
+let mult = []
+
+while (acc < 100) {
+ acc++
+if (acc % 7 == 0) {
+  mult.push(acc)
+}
+}
+ 
+while (acc < mult.length) {
+  soma += mult[acc]
+}
+
+
+
+export const resposta04 = soma
 
 // Lista para as questões 5 a 10:
 const nomes = [
@@ -220,6 +263,14 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
+
+let reversa = []
+let acc1 = nomes.length - 1
+
+while  (acc1 >= 0){
+  acc--
+  reversa.push(reversa[acc1])
+}
 
 export const resposta05 = false
 
