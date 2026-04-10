@@ -1,13 +1,13 @@
-Data de atualização: Dia 09/04/2026 às 20:43:44
+Data de atualização: Dia 10/04/2026 às 13:29:15
  
 
 | Questão | Exercício | Entregue | Correto | Mensagem de Erro |
 |---------|-----------|----------|---------|------------------|
 | ❌❌❌ | Ex 2 | ❌❌❌ | ❌❌❌ | contador is not defined |
 |  1 | Ex 01 | ✅ | ✅ | Nenhum erro |
-|  2 | Ex 01 | ✅ | ❌ | AssertionError: expected 676 to deeply equal 625 |
+|  2 | Ex 01 | ✅ | ✅ | Nenhum erro |
 |  3 | Ex 01 | ✅ | ✅ | Nenhum erro |
-|  4 | Ex 01 | ✅ | ❌ | AssertionError: expected 105 to deeply equal 735 |
+|  4 | Ex 01 | ✅ | ✅ | Nenhum erro |
 |  5 | Ex 01 | ✅ | ✅ | Nenhum erro |
 |  6 | Ex 01 | ✅ | ❌ | AssertionError: expected [] to deeply equal [ 'Ana', 'Carla', 'Eduarda', …(2) ] |
 |  7 | Ex 01 | ✅ | ❌ | AssertionError: expected [] to deeply equal [ 'Ana', 'Bruno', 'Carla', …(3) ] |
