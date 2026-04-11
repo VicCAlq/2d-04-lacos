@@ -389,4 +389,13 @@ const petsExoticos = [
 */
 // Escreva o código da solução abaixo:
 
-export const resposta12 = false
+let answer = "não encontrado";
+
+for (let petis of  petsExoticos) {
+  if (petis[0] === "s") {
+    resposta = petis;
+    break; //parar o codigo, pq ja achou um com a letra s tendesse
+  }
+}
+
+export const resposta12 = answer;
