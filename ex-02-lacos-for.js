@@ -313,8 +313,12 @@ para criar um novo array contendo todos os nomes em letras maiúsculas. Armazene
 novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta09 = false
+const petsMaiusculos = [];
+for (let pets of petsExoticos)
+  {
+    petsMaiusculos.push(pets.toUpperCase());
+  }
+export const resposta09 = petsMaiusculos
 
 /* Questão 10
 Com a mesma lista de pets exóticos acima, use um laço de repetição for...of para
@@ -327,8 +331,13 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
-
-export const resposta10 = false
+const petsR = []
+for (let pets of petsExoticos) {
+  if (pets.includes("r")) {
+    petsR.push(pets)
+  }
+}
+export const resposta10 = petsR
 
 /* Questão 11
 Continuando com a lista de pets exóticos, use um laço de repetição for...of para
@@ -341,8 +350,16 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
-
-export const resposta11 = false
+const petsSete = [];
+let contador = 0
+for (let pets of petsExoticos)
+  {
+    if (pets.length > 7){
+      petsSete.push(pets);
+      contador ++;
+    }
+  }
+export const resposta11 = contador
 
 /* Questão 12
 Encerrando com a lista de pets exóticos, use um laço de repetição for...of para
@@ -355,5 +372,14 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
-
-export const resposta12 = false
+let petsS = "não encontrado";
+let encontrado = false;
+for (let pets of petsExoticos)
+  { 
+    if(pets[0] === "s" && encontrado === false)
+  {
+    petsS = pets;
+    encontrado = true
+  } 
+  }
+export const resposta12 = petsS
