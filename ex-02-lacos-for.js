@@ -272,15 +272,11 @@ estão nos índices ímpares da lista original (índices 1, 3, 5, 7, 9, 11, 13).
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
-
-let itensLongos = [];
-for (let i = 0; i < itensDomesticos.length; i++) {
-  if (itensDomesticos[i].length > 6) {
-    itensLongos.push(itensDomesticos[i]);
-  }
+let itensImpares = [];
+for (let i = 1; i < itensDomesticos.length; i += 2) {
+  itensImpares.push(itensDomesticos[i]);
 }
-export const resposta07 = itensLongos;
-
+export const resposta06 = itensImpares;
 /* Questão 07
 Seguindo com a lista de itens domésticos, use um laço de repetição for (com contador)
 para criar um novo array contendo os itens com mais de 6 letras. Armazene o novo array
