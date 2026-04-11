@@ -305,16 +305,16 @@ que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver)
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
-const Vogal = [];
+const vogal = [];
 let ind = 0;
 while (ind < nomes.length)
 {
   if (nomes[ind][0] === "A" || nomes[ind][0] === "E" || nomes[ind][0] === "I" || nomes[ind][0] === "O" || nomes[ind][0] === "U") {
-     Vogal.push(nomes[ind]);
+     vogal.push(nomes[ind]);
     }
   ind++;
 }
-export const resposta09 = Vogal
+export const resposta09 = vogal
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
