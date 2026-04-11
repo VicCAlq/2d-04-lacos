@@ -290,8 +290,14 @@ Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
 escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta08 = false
+const maiuscula = [];
+let i = 0;
+while(i < nomes.length)
+{
+  maiuscula.push(nomes[i].toUpperCase());
+  i++
+}
+export const resposta08 = maiuscula
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -299,8 +305,16 @@ que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver)
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta09 = false
+const Vogal = [];
+let ind = 0;
+while (ind < nomes.length)
+{
+  if (nomes[ind][0] === "A" || nomes[ind][0] === "E" || nomes[ind][0] === "I" || nomes[ind][0] === "O" || nomes[ind][0] === "U") {
+     Vogal.push(nomes[ind]);
+    }
+  ind++;
+}
+export const resposta09 = Vogal
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -308,5 +322,13 @@ Se houver empate (mais de um nome com o mesmo comprimento máximo), armazene
 apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável resposta10.
 */
 // Escreva o código da solução abaixo:
+let nomeLongo = "";
+let indicie = 0;
 
-export const resposta10 = false
+while (indicie < nomes.length) {
+  if (nomes[indicie].length > nomeLongo.length) {
+    nomeLongo = nomes[indicie];
+  }
+  indicie++;
+}
+export const resposta10 = nomeLongo
