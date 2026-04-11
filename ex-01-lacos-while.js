@@ -302,13 +302,7 @@ escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
 
-let nomesMaiusculos = [];
-
-for (let i = 0; i < nomes.length; i++) {
-  nomesMaiusculos.push(nomes[i].toUpperCase());
-}
-
-export const resposta08 = nomesMaiusculos;
+export const resposta08 = false
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
