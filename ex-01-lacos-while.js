@@ -210,7 +210,7 @@ let posicao = 0;
 
 while (posicao < numeros.length) 
   {
-  quantidade += numeros[posicao++] < 0;;
+  quantidade += numeros[posicao++] < 0;
 }
 export const resposta03 = quantidade
 
