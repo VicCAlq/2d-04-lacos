@@ -221,8 +221,18 @@ Utilizando um laço de repetição while, faça a soma de todos os múltiplos de
 entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
+let i04 = 1;
+let soma = 0;
 
-export const resposta04 = false
+while (i04 <= 100) {
+    if (i04 % 7 === 0) {
+        soma += i04;
+    }
+    i04++;
+}
+
+export const resposta04 = soma;
+
 
 // Lista para as questões 5 a 10:
 const nomes = [
@@ -257,8 +267,15 @@ apenas os nomes que estão nos índices pares da lista original (índices 0, 2, 
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
+let nomesPares = [];
 
-export const resposta06 = false
+for (let i = 0; i < nomes.length; i++) {
+  if (i % 2 === 0) {
+    nomesPares.push(nomes[i]);
+  }
+}
+
+export const resposta06 = nomesPares;
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
@@ -285,7 +302,13 @@ escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta08 = false
+let nomesMaiusculos = [];
+
+for (let i = 0; i < nomes.length; i++) {
+  nomesMaiusculos.push(nomes[i].toUpperCase());
+}
+
+export const resposta08 = nomesMaiusculos;
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -323,5 +346,12 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 */
 // Escreva o código da solução abaixo:
 
-export const resposta10 = false
+let maisLongo = nomes[0];
 
+for (let i = 1; i < nomes.length; i++) {
+  if (nomes[i].length > maisLongo.length) {
+    maisLongo = nomes[i];
+  }
+}
+
+export const resposta10 = maisLongo;
