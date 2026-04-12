@@ -188,9 +188,9 @@ Utilizando um laço de repetição while, calcule a soma de todos os números í
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-let junior = 0
+let junior = 1
 let robson = 0
-while(robson <= 50)
+while(junior <= 50)
 {
 robson = robson + junior
 junior +=2 
@@ -203,19 +203,19 @@ Crie um laço de repetição while que conte quantos números negativos existem 
 array abaixo. Armazene a quantidade encontrada na variável resposta03.
 
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
-*/
+
 // Escreva o código da solução abaixo:
-/*const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2];
+*/
+const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2];
 let junior1 = 0;
 let robson1 = 0;
-while(robson1 <= numeros.length)
+while(robson1 < numeros.length)
 {
-  if([junior1]){
-
+  if(numeros[junior1]<0){
+    robson1 ++
   }
-robson1 = robson1 + junior1
-junior1 +=2 
-}*/
+junior1 ++
+}
 
 export const resposta03 = robson
 
