@@ -175,7 +175,13 @@ de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta01 = false
+let i01 = 0
+let soma01 = 0
+while (i01 <= 32){
+  soma01 = soma01 + i01
+  i02 ++
+}
+export const resposta01 = soma01
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
@@ -183,7 +189,13 @@ de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta0
 */
 // Escreva o código da solução abaixo:
 
-export const resposta02 = false
+let i02 = 1
+let soma02 = 0
+while (i02 <= 50){
+  soma02 = soma02 + i02
+  i02 += 2
+}
+
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -193,7 +205,16 @@ const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
 
-export const resposta03 = false
+const numSort = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
+let i03 = 0
+let quantNeg = 0
+while (i03 < numSort.length){
+  if (numSort[i03] < 0) {
+    quantNeg ++
+  }
+  i03 ++
+}
+export const resposta03 = quantNeg
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
@@ -201,7 +222,17 @@ entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta04 = false
+let i04 = 1;
+let soma = 0;
+
+while (i04 <= 100) {
+    if (i04 % 7 === 0) {
+        soma += i04;
+    }
+    i04++;
+}
+
+export const resposta04 = soma;
 
 // Lista para as questões 5 a 10:
 const nomes = [
@@ -221,7 +252,14 @@ na variável resposta05.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta05 = false
+let i05 = nomes.length - 1
+let nomesInv = []
+while( i05 >= 0 ) {
+  nomesInv.push(nomes[i05])
+  i05--
+}
+
+export const resposta05 = nomesInv
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -230,13 +268,31 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta06 = false
+for (let i = 0; i < nomes.length; i++) {
+  if (i % 2 === 0) {
+    nomesPares.push(nomes[i]);
+  }
+}
+
+export const resposta06 = nomesPares;
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
+
+let curtos = []
+let i07 = 0
+while (i07 < nomes.length) {
+  if (nomes[i07].length < 6) {
+    curtos.push(nomes[i07])
+  }
+  i07 ++
+}
+
+nomes.length = "comprimento da lista"
+nomes[0].length = "comprimento do item de texto"
 
 export const resposta07 = false
 
@@ -255,7 +311,28 @@ Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta09 = false
+let nomesVogais = []
+let i09 = 0
+while (i09 < nomes.length) {
+  if (nomes[i09][0] === "A") {
+    nomesVogais.push(nomes[i09])
+  }
+  if (nomes[i09][0] === "E") {
+    nomesVogais.push(nomes[i09])
+  }
+  if (nomes[i09][0] === "I") {
+    nomesVogais.push(nomes[i09])
+  }
+  if (nomes[i09][0] === "O") {
+    nomesVogais.push(nomes[i09])
+  }
+  if (nomes[i09][0] === "U") {
+    nomesVogais.push(nomes[i09])
+  }
+  i09 ++
+}
+
+export const resposta09 = nomesVogais
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -264,4 +341,10 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 */
 // Escreva o código da solução abaixo:
 
-export const resposta10 = false
+for (let i = 1; i < nomes.length; i++) {
+  if (nomes[i].length > maisLongo.length) {
+    maisLongo = nomes[i];
+  }
+}
+
+export const resposta10 = maisLongo;
