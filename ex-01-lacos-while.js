@@ -219,18 +219,16 @@ const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 let indice=0
-let novaLista = []
+let QuantidadeNegativos = 0
 
 while (indice < numeros.length){
     if(numeros[indice]<0){
-        novaLista.push(numeros[indice])
+        QuantidadeNegativos++
     }
     indice++
 }
-novaLista=novaLista.length
 
-
-export const resposta03 = novaLista
+export const resposta03 = QuantidadeNegativos
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
@@ -242,7 +240,7 @@ let acumuladorQuestaoQuatro = 1
 let limiteQuestaoQuatro = 100
 let somaQuestaoQuatro = 0
 
-while(acumuladorQuestaoQuatro<=fimQuestaoQuatro){
+while(acumuladorQuestaoQuatro<=limiteQuestaoQuatro){
     if(acumuladorQuestaoQuatro % 7 === 0){
         somaQuestaoQuatro= somaQuestaoQuatro + acumuladorQuestaoQuatro
     }
@@ -272,9 +270,9 @@ na variável resposta05.
 let nomesInvertidos=[]
 let indiceQuestaoCinco = nomes.length - 1
 
-while(indice>=nomesInvertidos.length){
-  nomesInvertidos.push(nomes[indice])
-  indice++
+while(indiceQuestaoCinco>=0){
+  nomesInvertidos.push(nomes[indiceQuestaoCinco])
+  indiceQuestaoCinco--
 }
 
 
