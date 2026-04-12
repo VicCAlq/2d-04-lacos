@@ -242,17 +242,14 @@ let acumuladorQuestaoQuatro = 1
 let limiteQuestaoQuatro = 100
 let somaQuestaoQuatro = 0
 
-while(acumuladorQuestaoQuatro<=limiteQuestaoQuatro){
-
-    if(acumuladorQuestaoQuatro%7==0){
-    somaQuestaoQuatro = somaQuestaoQuatro+acumuladorQuestaoQuatro
+while(acumuladorQuestaoQuatro<=fimQuestaoQuatro){
+    if(acumuladorQuestaoQuatro % 7 === 0){
+        somaQuestaoQuatro= somaQuestaoQuatro + acumuladorQuestaoQuatro
     }
-    acumuladorQuestaoQuatro++
+        acumuladorQuestaoQuatro++
 }
 
-
 export const resposta04 = somaQuestaoQuatro
-
 
 // Lista para as questões 5 a 10:
 const nomes = [
@@ -281,7 +278,7 @@ while(indice>=nomesInvertidos.length){
 }
 
 
-export const resposta05 = false
+export const resposta05 = nomesInvertidos
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -290,7 +287,18 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta06 = false
+
+let indiceQuestao06 = 0
+
+let nomesEmIndicePar = []
+
+while(indiceQuestao06 < nomes.length){
+   nomesEmIndicePar.push(nomes[indiceQuestao06])
+    indiceQuestao06+=2
+      
+}
+
+export const resposta06 = nomesEmIndicePar
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
@@ -298,7 +306,18 @@ que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta07 = false
+let indiceQuestao07 = 0
+let nomesCurtos = []
+
+while(indiceQuestao07 < nomes.length){
+  if(nomes[indiceQuestao07].length<=5){
+   nomesCurtos.push(nomes[indiceQuestao07])
+  }
+   indiceQuestao07++
+}
+
+export const resposta07 = nomesCurtos
+
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
@@ -306,7 +325,15 @@ escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta08 = false
+let indiceQuestao08 = 0
+let nomesMaiusculos = []
+
+while(indiceQuestao08 < nomes.length){
+  nomesMaiusculos.push(nomes[indiceQuestao08].toUpperCase())
+   indiceQuestao08++
+}
+
+export const resposta08 = nomesMaiusculos
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -315,7 +342,32 @@ Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta09 = false
+let indiceQuestao09 = 0
+let nomesIniciaisVogais = []
+
+while(indiceQuestao09 < nomes.length){
+  if(
+    nomes[indiceQuestao09][0]==="A"||
+    nomes[indiceQuestao09][0]==="À"||
+    nomes[indiceQuestao09][0]==="Ã"||
+    nomes[indiceQuestao09][0]==="E"||
+    nomes[indiceQuestao09][0]==="É"||
+    nomes[indiceQuestao09][0]==="Í"||
+    nomes[indiceQuestao09][0]==="I"||
+    nomes[indiceQuestao09][0]==="O"||
+    nomes[indiceQuestao09][0]==="Õ"||
+    nomes[indiceQuestao09][0]==="Ó"||
+    nomes[indiceQuestao09][0]==="U"||
+    nomes[indiceQuestao09][0]==="Ú"
+  )
+    
+  {
+   nomesIniciaisVogais.push(nomes[indiceQuestao09])
+  }
+   indiceQuestao09++
+}
+
+export const resposta09 = nomesIniciaisVogais
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -323,5 +375,7 @@ Se houver empate (mais de um nome com o mesmo comprimento máximo), armazene
 apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável resposta10.
 */
 // Escreva o código da solução abaixo:
+
+
 
 export const resposta10 = false
