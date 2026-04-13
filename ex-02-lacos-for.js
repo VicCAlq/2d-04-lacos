@@ -299,11 +299,13 @@ Finalizando com a lista de itens domésticos abaixo, use um laço de repetição
 o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
-/*const itensDomesticosReverso=[]
-for(let i=0;i<itensDomesticos.length;i++){
+
+const itensDomesticosReverso=[]
+for(let i=0; i<itensDomesticos.length; i++){
   itensDomesticosReverso.push(itensDomesticos.reverse())
-}*/
-export const resposta08 = false
+}
+
+export const resposta08 = itensDomesticosReverso;
 
 // Lista para as questões 5 a 10:
 const petsExoticos = [
