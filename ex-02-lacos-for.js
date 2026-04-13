@@ -254,12 +254,11 @@ Armazene o novo array na variável resposta05.
 
 */
 // Escreva o código da solução abaixo:
-let contador4 = 0
 const objetos0 = []
-for (let items1 of itensDomesticos) {
-  if (items1[0] === "c"){
-    objetos0[contador4] = items1
-    contador4++
+
+for (let i = 0; i < itensDomesticos.length; i++) {
+  if (itensDomesticos[i][0] === "c") {
+    objetos0.push(itensDomesticos[i])
   }
 }
 export const resposta05 = objetos0

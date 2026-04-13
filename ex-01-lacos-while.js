@@ -264,7 +264,8 @@ Armazene o novo array na variável resposta06.
 // Escreva o código da solução abaixo:
 const sopar = []
 let i2 = 0;
-while (i2 <= 8) {
+
+while (i2 < nomes.length) {
   sopar[sopar.length] = nomes[i2];
   i2 += 2;
 }
