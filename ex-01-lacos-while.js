@@ -1,6 +1,6 @@
 /*
 Assunto 01 - Laços de repetição: While
-
+//
 Uma das principais utilizades de realizar uma operação como código é a possibilidade
 de repetir a execução de um conjunto de instrições que escrevemos uma única vez. A
 estrutura que nos permite isso é chamada de "Laço de Repetição".
@@ -175,13 +175,12 @@ de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
 
-let numeros = 0
 let soma01 = 0
+let i01 = 1
 
-while (numeros <= 32) {
-  soma = soma01 + a
-  a++
-  
+while (i01 <= 32) {
+  soma01 += i01
+  i01++
 }
 
 export const resposta01 = soma01
@@ -192,12 +191,14 @@ de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta0
 */
 // Escreva o código da solução abaixo:
 
-let numerosImpares= 1
-let soma02= 0
+let soma02 = 0
+let i02 = 1
 
-while (numerosImpares >= 50) {
-  soma02 = soma02 + numerosImpares
-  numerosImpares+=2
+while (i02 <= 50) {
+  if (i02 % 2 !== 0) {
+    soma02 += i02
+  }
+  i02++
 }
 
 export const resposta02 = soma02
@@ -210,16 +211,18 @@ const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
 
-const numeros =  [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
-let numerosNegativos = 0;
-let quantidadeDeNegativos = 0;
-while (numerosNegativos < numeros.length) {
-  if(numeros < 0) {
-    quantidadeDeNegativos ++
+const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
+let i03 = 0
+let negativos = 0
+
+while (i03 < numeros.length) {
+  if (numeros[i03] < 0) {
+    negativos++
   }
+  i03++
 }
 
-export const resposta03 = quantidadeDeNegativos
+export const resposta03 = negativos
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
@@ -227,7 +230,17 @@ entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta04 = false
+let soma04 = 0
+let i04 = 1
+
+while (i04 <= 100) {
+  if (i04 % 7 === 0) {
+    soma04 += i04
+  }
+  i04++
+}
+
+export const resposta04 = soma04
 
 // Lista para as questões 5 a 10:
 const nomes = [
@@ -247,14 +260,15 @@ na variável resposta05.
 */
 // Escreva o código da solução abaixo:
 
-let primeirosNomes= nomes.length - 1
-let nomesInvertidos= []
-while ( primeirosNomes >= 0 ) {
-  nomesInvertidos.push(nomes[primeirosNomes])
-  primeirosNomes--
+let i05 = nomes.length - 1
+let nomesInv = []
+
+while (i05 >= 0) {
+  nomesInv.push(nomes[i05])
+  i05--
 }
 
-export const resposta05 = nomesInvertidos
+export const resposta05 = nomesInv
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -263,7 +277,17 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta06 = false
+let i06 = 0
+let pares = []
+
+while (i06 < nomes.length) {
+  if (i06 % 2 === 0) {
+    pares.push(nomes[i06])
+  }
+  i06++
+}
+
+export const resposta06 = pares
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
@@ -271,15 +295,17 @@ que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
 
-let nomesCurtos = []
-let listaNomes = 0
-while ( listaNomes < nomesCurtos.length) {
-  if (nomes[listaNomes] < 0) {
-    listaNomes++
+let i07 = 0
+let curtos = []
+
+while (i07 < nomes.length) {
+  if (nomes[i07].length <= 5) {
+    curtos.push(nomes[i07])
   }
+  i07++
 }
 
-export const resposta07 = nomesCurtos
+export const resposta07 = curtos
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
@@ -287,7 +313,15 @@ escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta08 = false
+let i08 = 0
+let maiusculos = []
+
+while (i08 < nomes.length) {
+  maiusculos.push(nomes[i08].toUpperCase())
+  i08++
+}
+
+export const resposta08 = maiusculos
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -296,28 +330,19 @@ Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
 
-let nomesVogais = []
-let maiusculas = 0
-while (maiusculas < nomes.length) {
-  if(nomes[maiusculas][0] === "A") {
-    nomesVogais.push(nomes[maiusculas])
+let i09 = 0
+let vogais = []
+const letrasVogais = ["A", "E", "I", "O", "U"]
+
+while (i09 < nomes.length) {
+  let primeiraLetra = nomes[i09][0].toUpperCase()
+  if (letrasVogais.includes(primeiraLetra)) {
+    vogais.push(nomes[i09])
   }
-   if(nomes[maiusculas][0] === "E") {
-    nomesVogais.push(nomes[maiusculas])
-  }
-   if(nomes[maiusculas][0] === "I") {
-    nomesVogais.push(nomes[maiusculas])
-  }
-   if(nomes[maiusculas][0] === "O") {
-    nomesVogais.push(nomes[maiusculas])
-  }
-   if(nomes[maiusculas][0] === "U") {
-    nomesVogais.push(nomes[maiusculas])
-  }
-  a++
+  i09++
 }
 
-export const resposta09 = maiusculas
+export const resposta09 = vogais
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -326,4 +351,14 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 */
 // Escreva o código da solução abaixo:
 
-export const resposta10 = false
+let i10 = 0
+let maiorNome = nomes[0]
+
+while (i10 < nomes.length) {
+  if (nomes[i10].length > maiorNome.length) {
+    maiorNome = nomes[i10]
+  }
+  i10++
+}
+
+export const resposta10 = maiorNome
