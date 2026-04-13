@@ -1,9 +1,9 @@
-Data de atualização: Dia 13/04/2026 às 00:34:00
+Data de atualização: Dia 13/04/2026 às 13:41:12
  
 
 | Questão | Exercício | Entregue | Correto | Mensagem de Erro |
 |---------|-----------|----------|---------|------------------|
-| ❌❌❌ | Ex 2 | ❌❌❌ | ❌❌❌ | contador is not defined |
+| ❌❌❌ | Ex 2 | ❌❌❌ | ❌❌❌ | petsMaiusculos.push is not a function |
 |  1 | Ex 01 | ✅ | ✅ | Nenhum erro |
 |  2 | Ex 01 | ✅ | ✅ | Nenhum erro |
 |  3 | Ex 01 | ✅ | ✅ | Nenhum erro |
