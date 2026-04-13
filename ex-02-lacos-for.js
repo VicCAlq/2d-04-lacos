@@ -191,7 +191,7 @@ Utilizando um laço de repetição for, calcule a soma de todos os números de 1
 // Escreva o código da solução abaixo:
 
 let soma = 0;
-for (let i = 0; i <= 100; i++); {
+for (let i = 0; i <= 101; i++); {
   soma += i;
 }console.log(soma);
 export const resposta01 = soma;
