@@ -248,7 +248,7 @@ na variável resposta05.
 */
 // Escreva o código da solução abaixo:
 let index = nomes.length-1;
-const (denominacoes) = [];
+const denominacoes = [];
 while (index >= 0)
 {
    denominacoes.push(nomes[index]);
