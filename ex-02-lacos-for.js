@@ -368,3 +368,4 @@ for(let pet of petsExoticos){
   }
 }
 export const resposta12 = petComS
+
