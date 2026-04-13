@@ -176,8 +176,10 @@ de 1 a 32. Envie o valor resultante na variável resposta01.
 // Escreva o código da solução abaixo:
 
 let acumulador = 1
+let soma = 0
 
 while (acumulador <= 32) {
+  soma += acumulador
   acumulador++
 }
 
@@ -190,11 +192,13 @@ de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta0
 // Escreva o código da solução abaixo:
 
 let ac = 1
+let somaImp = 0
 
 while (ac <= 50) {
-  if (ac % 2 == 0) {
-    ac++
+  if (ac % 2 !== 0) {
+    somaImp += ac
   }
+  ac++
 }
 
 export const resposta02 = ac
