@@ -1,9 +1,9 @@
-Data de atualização: Dia 13/04/2026 às 00:03:02
+Data de atualização: Dia 13/04/2026 às 00:38:24
  
 
 | Questão | Exercício | Entregue | Correto | Mensagem de Erro |
 |---------|-----------|----------|---------|------------------|
-|  1 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
+|  1 | Ex 01 | ✅ | ✅ | Nenhum erro |
 |  2 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
 |  3 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
 |  4 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
