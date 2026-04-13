@@ -311,7 +311,7 @@ para criar um novo array contendo todos os nomes em letras maiúsculas. Armazene
 novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
-let petsMaiusculos = 0
+let petsMaiusculos = []
 for(let pet of petsExoticos){
   petsMaiusculos.push(pet.toUpperCase())
 }
