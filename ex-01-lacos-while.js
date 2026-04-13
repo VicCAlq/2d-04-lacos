@@ -264,7 +264,8 @@ Armazene o novo array na variável resposta06.
 // Escreva o código da solução abaixo:
 const sopar = []
 let i2 = 0;
-while (i2 <= 8) {
+
+while (i2 < nomes.length) {
   sopar[sopar.length] = nomes[i2];
   i2 += 2;
 }
@@ -311,20 +312,23 @@ let i5 = 0;
 
 while (i5 < nomes.length)  {
   let primeiraLetra = nomes[i5][0];
-  if (primeiraLetra === "A" || primeiraLetra === "E" || primeiraLetra === "I" || primeiraLetra === "O" 
-    || primeiraLetra === "U" || primeiraLetra === "Á" || primeiraLetra === "É" || primeiraLetra === "Í" 
-    || primeiraLetra === "Ó" || primeiraLetra === "Ú") {
-vogais[vogais.length] = nomes[i5];
-    }
-i5 ++
+
+  if (
+    primeiraLetra === "A" || primeiraLetra === "E" ||
+    primeiraLetra === "I" || primeiraLetra === "O" ||
+    primeiraLetra === "U" || primeiraLetra === "Á" ||
+    primeiraLetra === "É" || primeiraLetra === "Í" ||
+    primeiraLetra === "Ó" || primeiraLetra === "Ú"
+  ) {
+    vogais[vogais.length] = nomes[i5];
   }
 
-// Forma mais simples usando includes:
-// if ("AEIOUÁÉÍÓÚ".includes(primeiraLetra)) {
-//   vogais[vogais.length] = nomes[i5];
-// }
+  i5++;
+}
 
 export const resposta09 = vogais;
+
+// }
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -342,6 +346,13 @@ while (i6 < nomes.length) {
   if (nomes[i6].length > maiorNome.length) {
     maiorNome = nomes[i6]; // se for maior, substitui
   }
-i6++;
+  i6++;
+}
+
 
 export const resposta10 = maiorNome;
+  
+
+// Forma mais simples usando includes:
+// if ("AEIOUÁÉÍÓÚ".includes(primeiraLetra)) {
+//   vogais

@@ -234,7 +234,7 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 let soma1 = 0;
 let multdetres = 0;
 
-for (i = 3; i <= 200; i +=3) {
+for (let i = 3; i <= 200; i +=3) {
   soma1 += i
   multdetres++
 }
@@ -254,12 +254,11 @@ Armazene o novo array na variável resposta05.
 
 */
 // Escreva o código da solução abaixo:
-let contador4 = 0
 const objetos0 = []
-for (let items1 of itensDomesticos) {
-  if (items1[0] === "c")){
-    objetos0[contador4] = items1
-    contador4++
+
+for (let i = 0; i < itensDomesticos.length; i++) {
+  if (itensDomesticos[i][0] === "c") {
+    objetos0.push(itensDomesticos[i])
   }
 }
 export const resposta05 = objetos0
@@ -389,4 +388,13 @@ const petsExoticos = [
 */
 // Escreva o código da solução abaixo:
 
-export const resposta12 = false
+let resposta = "não encontrado"
+
+for (let pets of petsExoticos) {
+  if (pets[0] === "s") {
+   resposta = pets
+  break;
+  }
+}
+
+export const resposta12 = resposta;
