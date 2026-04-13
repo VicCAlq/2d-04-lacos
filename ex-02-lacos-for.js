@@ -273,8 +273,7 @@ Armazene o novo array na variável resposta06.
 
 const objetos1 = []
 
-// Pega diretamente os itens que estão nos índices ímpares (1, 3, 5…)
-// Começa do 1 e pulamos de 2 em 2 para pegar apenas índices ímpares
+
 for (let i = 1; i < itensDomesticos.length; i += 2) {
   objetos1[objetos1.length] = itensDomesticos[i]
 }
@@ -288,12 +287,12 @@ na variável resposta07.
 */
 // Escreva o código da solução abaixo:
 
-let contador = 0;              // indice pro novo array
-const sixLetras = [];           // array q vai guardar os itens com mais de 6 letras
+let contador = 0;             
+const sixLetras = [];           
 
 for (let i = 0; i < itensDomesticos.length; i++) {
-  if (itensDomesticos[i].length > 6) {             // verifica se a palavra tem mais de 6 letras
-    sixLetras[contador] = itensDomesticos[i];      // adiciona a palavra no novo array
+  if (itensDomesticos[i].length > 6) {            
+    sixLetras[contador] = itensDomesticos[i];    
     contador++;                                     
   }
 }

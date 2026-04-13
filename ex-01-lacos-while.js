@@ -225,9 +225,9 @@ let adicao = 7;
 
 while (adicao <= 100) {
    mult7 += adicao;
-    // soma o valor atual (7, 14, 21) no acumulador
+    
   adicao += 7;
-    // vai pro próximo múltiplo de 7
+    
 }
 
 export const resposta04 = mult7;
@@ -250,7 +250,7 @@ const listaReverse = [];
 
 let i1 = nomes.length - 1;
 while (i1 >= 0) {
-  //.push adciona no final 
+
   listaReverse.push(nomes[i1]);
   i1--
 }
@@ -328,7 +328,6 @@ while (i5 < nomes.length)  {
 
 export const resposta09 = vogais;
 
-// }
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -337,22 +336,19 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 */
 // Escreva o código da solução abaixo:
 
-let maiorNome = nomes[0]; // começa assumindo que o primeiro nome é o maior
-let i6 = 1; // começa do segundo elemento
+let maiorNome = nomes[0]; 
+let i6 = 1; o
 
 
 while (i6 < nomes.length) {
- // compara o tamanho do nome atual com o maior até agora
-  if (nomes[i6].length > maiorNome.length) {
-    maiorNome = nomes[i6]; // se for maior, substitui
-  }
-  i6++;
-}
 
+  if (nomes[i6].length > maiorNome.length) {
+          maiorNome = nomes[i6]; 
+  }
+          i6++;
+
+
+}
 
 export const resposta10 = maiorNome;
   
-
-// Forma mais simples usando includes:
-// if ("AEIOUÁÉÍÓÚ".includes(primeiraLetra)) {
-//   vogais
