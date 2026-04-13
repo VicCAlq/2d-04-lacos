@@ -1,37 +1,37 @@
-Data de atualização: Dia 10/04/2026 às 13:35:47
+Data de atualização: Dia 13/04/2026 às 00:03:23
  
 
-| Aluno | Qtd. questões acertadas (de 17) | Nota total |
+| Aluno | Qtd. questões acertadas (de 15) | Nota total |
 |-------|---------------------------------|------------|
-| Adriano Filipe (adriano-filipe-nave) | 19 | 100.00 |
-| André Ricardo (andre-ricardo-nave) | 5 | 31.76 |
+| Adriano Filipe (adriano-filipe-nave) | 0 | 0.00 |
+| André Ricardo (andre-ricardo-nave) | 5 | 36.00 |
 | Arthur Amorim (ArthurAmorim67) | 0 | 0.00 |
 | Arthur Amorim (arthur-amorim-nave) | 0 | 0.00 |
 | Arthur Felipe (arthur-felipe-nave) | 0 | 0.00 |
-| Arthur Machado (arthur-machado-nave) | 0 | 0.00 |
+| Arthur Machado (arthur-machado-nave) | 8 | 54.67 |
 | Barbara Antão (barbara-antao-nave) | 0 | 0.00 |
 | Bernardo Cavalcanti (bernardoCavalcanti67) | 0 | 0.00 |
 | Bernardo Cavalcanti (bernardo-nascimento-nave) | 0 | 0.00 |
 | Bianca Beatriz (bianca-beatriz-nave) | 0 | 0.00 |
-| Brendha Priscilla (brendha-priscilla-nave) | 3 | 17.65 |
+| Brendha Priscilla (brendha-priscilla-nave) | 20 | 100.00 |
 | Breno Cavalcanti (Breno-Cavalcanti-Nave) | 0 | 0.00 |
 | Breno Costa (Breno-Costa-Nave) | 0 | 0.00 |
 | Caio BrandaoCbs (caiobrandao-cbs) | 0 | 0.00 |
 | Caio Brandao (caio-brandao-nave) | 0 | 0.00 |
-| Caua Rafael (caua-rafael-nave) | 0 | 0.00 |
+| Caua Rafael (caua-rafael-nave) | 21 | 100.00 |
 | Clarice Vitoria (clarice-vitoria-nave) | 0 | 0.00 |
-| David Luduvico (David-luduvico-nave) | 0 | 1.18 |
+| David Luduvico (David-luduvico-nave) | 0 | 0.00 |
 | Davi Emmanuel (Davi1008) | 0 | 0.00 |
 | Eduardo Crisriano (eduardo-cristiano-nave) | 0 | 0.00 |
-| Emilly Maciel (emilly-maciel-nave26) | 0 | 0.00 |
+| Emilly Maciel (emilly-maciel-nave26) | 10 | 66.67 |
 | Gabriel Cavalcanti (gabrielcavalcanti-16) | 0 | 0.00 |
 | Gabriel Cavalcanti (gabriel-cavalcanti-nave) | 0 | 0.00 |
-| Gabriel Leal (Gabriel-Leal-Nave) | 1 | 5.88 |
+| Gabriel Leal (Gabriel-Leal-Nave) | 22 | 100.00 |
 | Gabriel Tavares (Gabriel-Tavares-NAVE) | 0 | 0.00 |
-| Gustavo Henrique (gustavo-henrique-NAVE) | 1 | 5.88 |
+| Gustavo Henrique (gustavo-henrique-NAVE) | 22 | 100.00 |
 | Heytor Eloy (heytor-eloy-nave) | 0 | 0.00 |
 | Imael Isaque (Imael-isaque-nave) | 0 | 0.00 |
-| Jailson Ferreira (Jailson-Ferreira-nave) | 0 | 0.00 |
+| Jailson Ferreira (Jailson-Ferreira-nave) | 10 | 68.00 |
 | Jennifer Marielle (jennifer-marielle-nave) | 0 | 0.00 |
 | João Gomes (joaogomes-ctrl) | 0 | 0.00 |
 | Kaique Alex (kaique-alex-nave) | 22 | 100.00 |
