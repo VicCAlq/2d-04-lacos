@@ -1,27 +1,7 @@
-Data de atualização: Dia 10/04/2026 às 13:31:19
+Data de atualização: Dia 12/04/2026 às 23:58:31
  
 
 | Questão | Exercício | Entregue | Correto | Mensagem de Erro |
 |---------|-----------|----------|---------|------------------|
-|  1 | Ex 01 | ✅ | ❌ | AssertionError: expected 36 to deeply equal 528 |
-|  2 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  3 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  4 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  5 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  6 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  7 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  8 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  9 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-| 10 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  1 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  2 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  3 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  4 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  5 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  6 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  7 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  8 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  9 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-| 10 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-| 11 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-| 12 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
+| ❌❌❌ | Ex 1 | ❌❌❌ | ❌❌❌ | Cannot access 'i02' before initialization |
+| ❌❌❌ | Ex 2 | ❌❌❌ | ❌❌❌ | media is not defined |
