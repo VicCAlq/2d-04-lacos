@@ -194,7 +194,7 @@ de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta0
 // Escreva o código da solução abaixo:
 let a2 = 0;
 let c = 1;
-while(c <= 51) {
+while(c <= 50) {
     a2 += c;
     c += 2;
     console.log(a);

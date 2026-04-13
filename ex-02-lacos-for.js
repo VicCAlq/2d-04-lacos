@@ -202,7 +202,7 @@ Utilizando um laço de repetição for, calcule quantos números ímpares existe
 */
 // Escreva o código da solução abaixo:
 let inicio = 1;
-let fim = 50;
+let fim = 51;
 for (let i = 0 ; i <= fim; i++); {
  if (i % 2 !== 0); {
   console.log(i);  }
