@@ -234,7 +234,7 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 let soma1 = 0;
 let multdetres = 0;
 
-for (i = 3; i <= 200; i +=3) {
+for (let i = 3; i <= 200; i +=3) {
   soma1 += i
   multdetres++
 }

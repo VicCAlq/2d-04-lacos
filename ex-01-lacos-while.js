@@ -329,8 +329,6 @@ export const resposta09 = vogais;
 
 // }
 
-export const resposta09 = vogais;
-
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
 Se houver empate (mais de um nome com o mesmo comprimento máximo), armazene
