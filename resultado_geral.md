@@ -1,9 +1,9 @@
-Data de atualização: Dia 13/04/2026 às 00:38:38
+Data de atualização: Dia 13/04/2026 às 13:45:10
  
 
 | Aluno | Qtd. questões acertadas (de 15) | Nota total |
 |-------|---------------------------------|------------|
-| Adriano Filipe (adriano-filipe-nave) | 0 | 0.00 |
+| Adriano Filipe (adriano-filipe-nave) | 22 | 100.00 |
 | André Ricardo (andre-ricardo-nave) | 8 | 53.33 |
 | Arthur Amorim (ArthurAmorim67) | 0 | 0.00 |
 | Arthur Amorim (arthur-amorim-nave) | 0 | 0.00 |
@@ -20,7 +20,7 @@ Data de atualização: Dia 13/04/2026 às 00:38:38
 | Caio Brandao (caio-brandao-nave) | 0 | 0.00 |
 | Caua Rafael (caua-rafael-nave) | 21 | 100.00 |
 | Clarice Vitoria (clarice-vitoria-nave) | 0 | 0.00 |
-| David Luduvico (David-luduvico-nave) | 0 | 0.00 |
+| David Luduvico (David-luduvico-nave) | 18 | 100.00 |
 | Davi Emmanuel (Davi1008) | 0 | 0.00 |
 | Eduardo Crisriano (eduardo-cristiano-nave) | 0 | 0.00 |
 | Emilly Maciel (emilly-maciel-nave26) | 10 | 66.67 |
@@ -35,8 +35,8 @@ Data de atualização: Dia 13/04/2026 às 00:38:38
 | Jennifer Marielle (jennifer-marielle-nave) | 18 | 100.00 |
 | João Gomes (joaogomes-ctrl) | 0 | 0.00 |
 | Kaique Alex (kaique-alex-nave) | 22 | 100.00 |
-| Kaylane Marinho (Kaylane-Marinho-nave) | 0 | 0.00 |
-| Lívia Barros (livia-barros-nave) | 0 | 0.00 |
+| Kaylane Marinho (Kaylane-Marinho-nave) | 10 | 66.67 |
+| Lívia Barros (livia-barros-nave) | 18 | 100.00 |
 | Luanna Carla (Luanna-Carla-nave) | 0 | 0.00 |
 | Maria Helena (Maria-Helena-Nave) | 0 | 0.00 |
 | Matheus Guilherme (Matheus-Guilherme-nave) | 0 | 0.00 |
@@ -49,7 +49,7 @@ Data de atualização: Dia 13/04/2026 às 00:38:38
 | Sophia Goes (sophia-goes-nave) | 18 | 100.00 |
 | Thiago Barbosa (Thiago-Barbosa-Nave) | 0 | 0.00 |
 | Viktor Phorely Diaz (Viktor-PhorelyDiaz) | 0 | 0.00 |
-| Vinicyus Eduardo (vinicyuseduardo-alt) | 0 | 0.00 |
+| Vinicyus Eduardo (vinicyuseduardo-alt) | 22 | 100.00 |
 | Waldemir ViegasAlt (waldemirviegas-alt) | 1 | 6.67 |
 | Wesley Eder (Wesley-Eder-Nave) | 0 | 0.00 |
 | Yasmin Rocha (yasmin-rocha-nave) | 0 | 0.00 |
