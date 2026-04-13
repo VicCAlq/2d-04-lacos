@@ -201,12 +201,13 @@ Utilizando um laço de repetição for, calcule quantos números ímpares existe
 1 e 50 (incluindo o 1 e 50). Armazene a quantidade encontrada na variável resposta02.
 */
 // Escreva o código da solução abaixo:
+let numerosImp = 0;
 for(let contador = 0; contador <= 50; contador++){
   if(contador % 2 === 1){
-    console.log([contador])
+    numerosImp += contador
   }
 }
-export const resposta02 = contador
+export const resposta02 = numerosImp
 
 /* Questão 03
 Utilizando um laço de repetição for, calcule a soma de todos os números pares
