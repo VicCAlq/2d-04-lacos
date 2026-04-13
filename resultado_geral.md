@@ -1,10 +1,10 @@
-Data de atualização: Dia 13/04/2026 às 00:03:23
+Data de atualização: Dia 13/04/2026 às 00:38:38
  
 
 | Aluno | Qtd. questões acertadas (de 15) | Nota total |
 |-------|---------------------------------|------------|
 | Adriano Filipe (adriano-filipe-nave) | 0 | 0.00 |
-| André Ricardo (andre-ricardo-nave) | 5 | 36.00 |
+| André Ricardo (andre-ricardo-nave) | 8 | 53.33 |
 | Arthur Amorim (ArthurAmorim67) | 0 | 0.00 |
 | Arthur Amorim (arthur-amorim-nave) | 0 | 0.00 |
 | Arthur Felipe (arthur-felipe-nave) | 0 | 0.00 |
@@ -32,7 +32,7 @@ Data de atualização: Dia 13/04/2026 às 00:03:23
 | Heytor Eloy (heytor-eloy-nave) | 0 | 0.00 |
 | Imael Isaque (Imael-isaque-nave) | 0 | 0.00 |
 | Jailson Ferreira (Jailson-Ferreira-nave) | 10 | 68.00 |
-| Jennifer Marielle (jennifer-marielle-nave) | 0 | 0.00 |
+| Jennifer Marielle (jennifer-marielle-nave) | 18 | 100.00 |
 | João Gomes (joaogomes-ctrl) | 0 | 0.00 |
 | Kaique Alex (kaique-alex-nave) | 22 | 100.00 |
 | Kaylane Marinho (Kaylane-Marinho-nave) | 0 | 0.00 |
@@ -42,14 +42,14 @@ Data de atualização: Dia 13/04/2026 às 00:03:23
 | Matheus Guilherme (Matheus-Guilherme-nave) | 0 | 0.00 |
 | Michel Nascimento Nave (michelnascimento-nave) | 0 | 0.00 |
 | Miguel Angelo (miguel-angelo-nave) | 0 | 0.00 |
-| Pedro Carvalho (Pedro-Carvalho-Nave) | 17 | 100.00 |
+| Pedro Carvalho (Pedro-Carvalho-Nave) | 18 | 100.00 |
 | Rianna Lavinia (Rianna-Lavinia-Nave) | 0 | 0.00 |
 | Samuel Assuncao (samuel-assuncao-nave) | 0 | 0.00 |
 | Samuel Lindoso (samuel-lindoso-nave) | 0 | 0.00 |
-| Sophia Goes (sophia-goes-nave) | 0 | 0.00 |
+| Sophia Goes (sophia-goes-nave) | 18 | 100.00 |
 | Thiago Barbosa (Thiago-Barbosa-Nave) | 0 | 0.00 |
 | Viktor Phorely Diaz (Viktor-PhorelyDiaz) | 0 | 0.00 |
 | Vinicyus Eduardo (vinicyuseduardo-alt) | 0 | 0.00 |
-| Waldemir ViegasAlt (waldemirviegas-alt) | 0 | 0.00 |
+| Waldemir ViegasAlt (waldemirviegas-alt) | 1 | 6.67 |
 | Wesley Eder (Wesley-Eder-Nave) | 0 | 0.00 |
 | Yasmin Rocha (yasmin-rocha-nave) | 0 | 0.00 |
