@@ -344,7 +344,8 @@ while (i6 < nomes.length) {
   if (nomes[i6].length > maiorNome.length) {
     maiorNome = nomes[i6]; // se for maior, substitui
   }
+  i6++
 }
-i6++;
+
 
 export const resposta10 = maiorNome;
